@@ -1,5 +1,10 @@
-@mixin basicStyle($textColor, $backgroundColor, $borderColor) {
+@mixin basicStyle($textColor, $backgroundColor) {
     color: $textColor;
     background-color: $backgroundColor;
+}
+
+@mixin borderStyle($borderStyle, $borderWidth, $borderColor) {
+    border-style: $borderStyle;
+    border-width: $borderWidth;
     border-color: $borderColor;
 }

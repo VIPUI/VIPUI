@@ -8,8 +8,10 @@ $brandColor: #EC008C !default;
 // Primary Colors
 $buttonTextColor: $white !default;
 $buttonBackgroundColor: $brandColor !default;
-$buttonBorderColor: $brandColor !default;
 // Details 
 $borderRadius: 0 !default;
 // Button
 $buttonBorderRadius: $borderRadius !default;
+$buttonBorderStyle: solid !default;
+$buttonBorderWidth: 0 !default;
+$buttonBorderColor: $brandColor !default;

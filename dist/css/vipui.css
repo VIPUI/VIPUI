@@ -9,6 +9,8 @@
   font-size: 100%;
   color: #fff;
   background-color: #EC008C;
+  border-style: solid;
+  border-width: 0;
   border-color: #EC008C; }
   .vipui button:focus {
     outline: 0; }

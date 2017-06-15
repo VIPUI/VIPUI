@@ -10,7 +10,8 @@
         cursor: pointer;
         box-sizing: border-box;
         font-size: 100%;
-        @include basicStyle($buttonTextColor, $buttonBackgroundColor, $buttonBorderColor);
+        @include basicStyle($buttonTextColor, $buttonBackgroundColor);
+        @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderColor);
         &:focus {
             outline: 0;
         }
