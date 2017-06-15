@@ -1,0 +1,18 @@
+@import "mixins";
+// 基本按钮
+.vipui {
+    button {
+        display: inline-block;
+        zoom: 1;
+        white-space: nowrap;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-size: 100%;
+        @include basicStyle($buttonTextColor, $buttonBackgroundColor, $buttonBorderColor);
+        &:focus {
+            outline: 0;
+        }
+    }
+}

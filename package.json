@@ -1,0 +1,35 @@
+{
+  "name": "vipui",
+  "version": "0.0.1",
+  "description": "A small and simple UI library that you can use in every web project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss src/stylesheets/vipui.scss  dist/css/vipui.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VIPUI/VIPUI.git"
+  },
+  "keywords": [
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "vipui",
+    "css",
+    "vip.com",
+    "vipuicss"
+  ],
+  "author": "mathxlee <woood@hotmail.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/VIPUI/VIPUI/issues"
+  },
+  "homepage": "https://github.com/VIPUI/VIPUI#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
+  }
+}

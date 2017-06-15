@@ -1,0 +1,14 @@
+.vipui button {
+  display: inline-block;
+  zoom: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 100%;
+  color: #fff;
+  background-color: #EC008C;
+  border-color: #EC008C; }
+  .vipui button:focus {
+    outline: 0; }
