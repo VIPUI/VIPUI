@@ -1,0 +1,29 @@
+// Primary Colors
+$buttonTextColor: $defaultTextColor !default;
+$buttonTextBrandColor: $white !default;
+$buttonBackgroundColor: $white !default;
+$buttonBackgroundBrandColor: $brandColor !default;
+// Basic
+$buttonBorderRadius: $borderRadius !default;
+$buttonBorderStyle: solid !default;
+$buttonBorderWidth: 1px !default;
+$buttonBorderColor: $defaultBorderColor !default;
+$buttonBorderBrandColor: $brandColor !default;
+// Padding Size
+$buttonPaddingMini: .12em .5em;
+$buttonPaddingSmall: .25em 1em;
+$buttonPaddingDefault: .5em 2em;
+$buttonPaddingLarge: 1em 2.5em;
+$buttonPaddingHuge: 1.8em 3.5em;
+// Font Size
+$buttonFontSizeMini: .75em;
+$buttonFontSizeSmall: .875em;
+$buttonFontSizeDefault: 1em;
+$buttonFontSizeLarge: 1.25em;
+$buttonFontSizeHuge: 2em;
+// Font Size
+$buttonLineHeightMini: 1.5;
+$buttonLineHeightSmall: 1.5;
+$buttonLineHeightDefault: 1.5;
+$buttonLineHeightLarge: 1.5;
+$buttonLineHeightHuge: 1.5;

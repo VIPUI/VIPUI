@@ -1,3 +1,6 @@
+.vipui {
+  font-size: 14px; }
+
 .vipui button {
   display: inline-block;
   zoom: 1;
@@ -7,10 +10,67 @@
   cursor: pointer;
   box-sizing: border-box;
   font-size: 100%;
-  color: #fff;
-  background-color: #EC008C;
+  padding: .5em 1em;
+  transition: background-color .3s linear;
+  color: #666;
+  background-color: #fff;
   border-style: solid;
-  border-width: 0;
-  border-color: #EC008C; }
+  border-width: 1px;
+  border-color: #ccc;
+  padding: 0.5em 2em;
+  font-size: 1em;
+  line-height: 1.5; }
+  .vipui button.mini {
+    padding: 0.12em 0.5em;
+    font-size: 0.75em;
+    line-height: 1.5; }
+  .vipui button.small {
+    padding: 0.25em 1em;
+    font-size: 0.875em;
+    line-height: 1.5; }
+  .vipui button.large {
+    padding: 1em 2.5em;
+    font-size: 1.25em;
+    line-height: 1.5; }
+  .vipui button.huge {
+    padding: 1.8em 3.5em;
+    font-size: 2em;
+    line-height: 1.5; }
+  .vipui button.block {
+    display: block;
+    width: 100%; }
+    .vipui button.block + .block {
+      margin-left: 1em; }
   .vipui button:focus {
     outline: 0; }
+  .vipui button:hover {
+    color: #666;
+    background-color: #F6F6F6; }
+  .vipui button:active {
+    color: #666;
+    background-color: #f2f2f2; }
+  .vipui button.default {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 0.5em 2em;
+    font-size: 1em;
+    line-height: 1.5; }
+  .vipui button.brand {
+    color: #fff;
+    background-color: #EC008C;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #EC008C; }
+    .vipui button.brand:hover {
+      color: #fff;
+      background-color: #ff3aaf;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ff3aaf; }
+    .vipui button.brand:active {
+      color: #fff;
+      background-color: #d3007d;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #d3007d; }

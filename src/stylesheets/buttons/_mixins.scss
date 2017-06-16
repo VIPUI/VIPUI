@@ -8,3 +8,9 @@
     border-width: $borderWidth;
     border-color: $borderColor;
 }
+
+@mixin sizeStyle($padding, $fontSize, $lineHeight) {
+    padding: $padding;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}

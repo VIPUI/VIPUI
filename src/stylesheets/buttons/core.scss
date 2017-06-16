@@ -1,3 +1,4 @@
+@import "variables";
 @import "mixins";
 // 基本按钮
 .vipui {
@@ -10,10 +11,54 @@
         cursor: pointer;
         box-sizing: border-box;
         font-size: 100%;
+        padding: .5em 1em;
+        transition: background-color .3s linear;
         @include basicStyle($buttonTextColor, $buttonBackgroundColor);
         @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderColor);
+        @include sizeStyle($buttonPaddingDefault, $buttonFontSizeDefault, $buttonLineHeightDefault); // mini size
+        &.mini {
+            @include sizeStyle($buttonPaddingMini, $buttonFontSizeMini, $buttonLineHeightMini);
+        } // small size
+        &.small {
+            @include sizeStyle($buttonPaddingSmall, $buttonFontSizeSmall, $buttonLineHeightSmall);
+        } // large size
+        &.large {
+            @include sizeStyle($buttonPaddingLarge, $buttonFontSizeLarge, $buttonLineHeightLarge);
+        } // huge size
+        &.huge {
+            @include sizeStyle($buttonPaddingHuge, $buttonFontSizeHuge, $buttonLineHeightHuge);
+        } // block button
+        &.block {
+            display: block;
+            width: 100%;
+            &+.block {
+                margin-left: 1em;
+            }
+        }
         &:focus {
             outline: 0;
+        }
+        &:hover {
+            @include basicStyle($buttonTextColor, #F6F6F6);
+        }
+        &:active {
+            @include basicStyle($buttonTextColor, darken($buttonBackgroundColor, 5%));
+        } // 默认按钮
+        &.default {
+            @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderColor);
+            @include sizeStyle($buttonPaddingDefault, $buttonFontSizeDefault, $buttonLineHeightDefault);
+        }
+        &.brand {
+            @include basicStyle($buttonTextBrandColor, $buttonBackgroundBrandColor);
+            @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderBrandColor);
+            &:hover {
+                @include basicStyle($buttonTextBrandColor, lighten($buttonBackgroundBrandColor, 15%));
+                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, lighten($buttonBackgroundBrandColor, 15%));
+            }
+            &:active {
+                @include basicStyle($buttonTextBrandColor, darken($buttonBackgroundBrandColor, 5%));
+                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, darken($buttonBackgroundBrandColor, 5%));
+            }
         }
     }
 }
