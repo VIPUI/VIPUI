@@ -39,8 +39,6 @@
   .vipui button.block {
     display: block;
     width: 100%; }
-    .vipui button.block + .block {
-      margin-left: 1em; }
   .vipui button:focus {
     outline: 0; }
   .vipui button:hover {
@@ -74,3 +72,60 @@
       border-style: solid;
       border-width: 1px;
       border-color: #d3007d; }
+    .vipui button.brand.ghost {
+      color: #EC008C;
+      background-color: #fff;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #EC008C; }
+      .vipui button.brand.ghost:hover {
+        color: #EC008C;
+        background-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ff3aaf; }
+      .vipui button.brand.ghost:active {
+        color: #d3007d;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #d3007d; }
+  .vipui button.secondary {
+    color: #fff;
+    background-color: #333;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333; }
+    .vipui button.secondary:hover {
+      color: #fff;
+      background-color: #595959;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #595959; }
+    .vipui button.secondary:active {
+      color: #fff;
+      background-color: #262626;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #262626; }
+    .vipui button.secondary.ghost {
+      color: #333;
+      background-color: #fff;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #333; }
+      .vipui button.secondary.ghost:hover {
+        color: #333;
+        background-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #595959; }
+      .vipui button.secondary.ghost:active {
+        color: #262626;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #262626; }
+  .vipui button[disabled] {
+    cursor: not-allowed;
+    opacity: .5; }

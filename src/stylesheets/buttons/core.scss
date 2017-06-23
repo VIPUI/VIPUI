@@ -31,9 +31,6 @@
         &.block {
             display: block;
             width: 100%;
-            &+.block {
-                margin-left: 1em;
-            }
         }
         &:focus {
             outline: 0;
@@ -59,6 +56,46 @@
                 @include basicStyle($buttonTextBrandColor, darken($buttonBackgroundBrandColor, 5%));
                 @include borderStyle($buttonBorderStyle, $buttonBorderWidth, darken($buttonBackgroundBrandColor, 5%));
             }
+            &.ghost {
+                @include basicStyle($buttonBackgroundBrandColor, $buttonTextBrandColor);
+                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBackgroundBrandColor);
+                &:hover {
+                    @include basicStyle($buttonBackgroundBrandColor, lighten($buttonTextBrandColor, 15%));
+                    @include borderStyle($buttonBorderStyle, $buttonBorderWidth, lighten($buttonBackgroundBrandColor, 15%));
+                }
+                &:active {
+                    @include basicStyle(darken($buttonBackgroundBrandColor, 5%), $buttonTextBrandColor);
+                    @include borderStyle($buttonBorderStyle, $buttonBorderWidth, darken($buttonBackgroundBrandColor, 5%));
+                }
+            }
+        }
+        &.secondary {
+            @include basicStyle($buttonTextSecondaryColor, $buttonBackgroundSecondaryColor);
+            @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderSecondaryColor);
+            &:hover {
+                @include basicStyle($buttonTextSecondaryColor, lighten($buttonBackgroundSecondaryColor, 15%));
+                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, lighten($buttonBackgroundSecondaryColor, 15%));
+            }
+            &:active {
+                @include basicStyle($buttonTextSecondaryColor, darken($buttonBackgroundSecondaryColor, 5%));
+                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, darken($buttonBackgroundSecondaryColor, 5%));
+            }
+            &.ghost {
+                @include basicStyle($buttonBackgroundSecondaryColor, $buttonTextSecondaryColor);
+                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBackgroundSecondaryColor);
+                &:hover {
+                    @include basicStyle($buttonBackgroundSecondaryColor, lighten($buttonTextSecondaryColor, 15%));
+                    @include borderStyle($buttonBorderStyle, $buttonBorderWidth, lighten($buttonBackgroundSecondaryColor, 15%));
+                }
+                &:active {
+                    @include basicStyle(darken($buttonBackgroundSecondaryColor, 5%), $buttonTextSecondaryColor);
+                    @include borderStyle($buttonBorderStyle, $buttonBorderWidth, darken($buttonBackgroundSecondaryColor, 5%));
+                }
+            }
+        }
+        &[disabled] {
+            cursor: not-allowed;
+            opacity: .5;
         }
     }
 }

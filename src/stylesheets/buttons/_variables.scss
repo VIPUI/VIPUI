@@ -1,14 +1,19 @@
-// Primary Colors
+// Default Button Colors
 $buttonTextColor: $defaultTextColor !default;
-$buttonTextBrandColor: $white !default;
 $buttonBackgroundColor: $white !default;
+// Primary Button Colors
+$buttonTextBrandColor: $white !default;
 $buttonBackgroundBrandColor: $brandColor !default;
+// Secondary Button Colors
+$buttonTextSecondaryColor: $white !default;
+$buttonBackgroundSecondaryColor: $secondaryColor !default;
 // Basic
 $buttonBorderRadius: $borderRadius !default;
 $buttonBorderStyle: solid !default;
 $buttonBorderWidth: 1px !default;
 $buttonBorderColor: $defaultBorderColor !default;
 $buttonBorderBrandColor: $brandColor !default;
+$buttonBorderSecondaryColor: $secondaryColor !default;
 // Padding Size
 $buttonPaddingMini: .12em .5em;
 $buttonPaddingSmall: .25em 1em;
