@@ -1,6 +1,6 @@
 @import "variables";
 @import "mixins";
-// 基本按钮
+
 .vipui {
     button {
         display: inline-block;
@@ -13,26 +13,40 @@
         transition: all .3s linear;
         @include basicStyle($buttonTextColor, $buttonBackgroundColor);
         @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderColor);
-        @include sizeStyle($buttonPaddingDefault, $buttonFontSizeDefault, $buttonLineHeightDefault); // mini size
+        @include sizeStyle($buttonPaddingDefault, $buttonFontSizeDefault, $buttonLineHeightDefault);
+
+        /* mini size */
         &.mini {
             @include sizeStyle($buttonPaddingMini, $buttonFontSizeMini, $buttonLineHeightMini);
-        } // small size
+        }
+
+        /* small size */
         &.small {
             @include sizeStyle($buttonPaddingSmall, $buttonFontSizeSmall, $buttonLineHeightSmall);
-        } // large size
+        }
+
+        /* large size */
         &.large {
             @include sizeStyle($buttonPaddingLarge, $buttonFontSizeLarge, $buttonLineHeightLarge);
-        } // huge size
+        }
+
+        /* huge size */
         &.huge {
             @include sizeStyle($buttonPaddingHuge, $buttonFontSizeHuge, $buttonLineHeightHuge);
-        } // block button
+        }
+
+        /* block button */
         &.block {
             display: block;
             width: 100%;
         }
+
+        /* clear focus status */
         &:focus {
             outline: 0;
         }
+
+        /* default button */
         &.default {
             @include basicStyle($buttonTextColor, $buttonBackgroundColor);
             @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderColor);
@@ -55,6 +69,8 @@
                 }
             }
         }
+
+        /* brand button */
         &.brand {
             @include basicStyle($buttonTextBrandColor, $buttonBackgroundBrandColor);
             @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderBrandColor);
@@ -79,6 +95,8 @@
                 }
             }
         }
+
+        /* disabled status */
         &[disabled] {
             cursor: not-allowed;
             @include basicStyle($buttonDisabledColor, $buttonDisabledBackgroundBrandColor);
@@ -104,11 +122,15 @@
                 }
             }
         }
+
+        /* icon */
         .icon {
             &+span {
                 margin-left: $buttonIconMarginLeft;
             }
         }
+
+        /* button bold text */
         &.bold {
             font-weight: bold;
         }

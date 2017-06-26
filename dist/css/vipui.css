@@ -1,6 +1,10 @@
+/* VIPUI */
+/* Variables */
+/* Colors */
 .vipui {
   font-size: 14px; }
 
+/* Button Mixin */
 .vipui button {
   display: inline-block;
   zoom: 1;
@@ -17,7 +21,18 @@
   border-color: #333;
   padding: 0.393em 2em;
   font-size: 1em;
-  line-height: 1.5; }
+  line-height: 1.5;
+  /* mini size */
+  /* small size */
+  /* large size */
+  /* huge size */
+  /* block button */
+  /* clear focus status */
+  /* default button */
+  /* brand button */
+  /* disabled status */
+  /* icon */
+  /* button bold text */ }
   .vipui button.mini {
     padding: 0.126em 1.5em;
     font-size: 0.8571em;
