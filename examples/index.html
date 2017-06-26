@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VIPUI exmaples</title>
     <link rel="stylesheet" href="../dist/css/vipui.css">
+    <link rel="stylesheet" href="../node_modules/.4.7.0@font-awesome/css/font-awesome.css">
 </head>
 
 <body class="vipui">
@@ -17,29 +18,32 @@
 
     <p>
         <button type="button" class="default">default button</button>
+        <button type="button" class="default ghost">ghost default button</button>
         <button type="button" class="brand">brand button</button>
-        <button type="button" class="secondary">secondary button</button>
         <button type="button" class="brand ghost">ghost brand button</button>
-        <button type="button" class="secondary ghost">ghost secondary button</button>
+        <button type="button" disabled class="default">disabled button</button>
+        <button type="button" disabled class="default ghost">disabled button</button>
     </p>
 
-    <h5>Button disabled status 按钮不可点状态</h5>
-
     <p>
-        <button type="button" disabled class="default">default button</button>
-        <button type="button" disabled class="brand">brand button</button>
-        <button type="button" disabled class="secondary">secondary button</button>
-        <button type="button" disabled class="brand ghost">ghost brand button</button>
-        <button type="button" disabled class="secondary ghost">ghost secondary button</button>
-    </p>
-
-    <h5>Button blocked 块级按钮</h5>
-
-    <p>
-        <button type="button" class="block">block button</button>
         <button type="button" class="brand block">block button</button>
-        <button type="button" class="secondary block">block button</button>
+        <button type="button" class="brand ghost block">ghost block button</button>
     </p>
+
+    <h4>Button Icon 图标按钮</h4>
+
+    <button type="button" class="default">
+        <i class="icon fa fa-bath" aria-hidden="true"></i>
+        <span>default button</span>
+    </button>
+    <button type="button" class="brand">
+        <i class="icon fa fa-bath" aria-hidden="true"></i>
+        <span>brand button</span>
+    </button>
+    <button type="button" class="default ghost">
+        <i class="icon fa fa-bath" aria-hidden="true"></i>
+        <span>ghost default button</span>
+    </button>
 
     <h4>Button Size 按钮尺寸</h4>
 
@@ -64,8 +68,8 @@
     </p>
 
     <p>
-        <button type="button" class="huge">huge size</button>
-        <button type="button" class="huge brand">huge size & brand color</button>
+        <button type="button" class="huge bold">huge size</button>
+        <button type="button" class="huge brand bold">huge size & brand color</button>
     </p>
 
     <script src="../dist/js/vipui.js"></script>

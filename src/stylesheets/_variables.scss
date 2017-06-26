@@ -5,11 +5,13 @@ $black: #000 !default;
 $white: #fff !default;
 // Brand Colors
 $brandColor: #EC008C !default;
-// Secondary Colors
-$secondaryColor: #333 !default;
+// Default Colors
+$color-333: #333 !default;
+$color-666: #666 !default;
+$color-ccc: #ccc !default;
 // Theme Colors
-$defaultTextColor: #666 !default;
-$defaultBorderColor: #ccc !default;
-$defaultBackgroundColor: #f6f6f6 !default;
+$defaultTextColor: $white !default;
+$defaultBorderColor: $color-333 !default;
+$defaultBackgroundColor: $color-333 !default;
 // Details 
 $borderRadius: 0 !default;

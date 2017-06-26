@@ -9,51 +9,66 @@
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
-  font-size: 100%;
-  padding: .5em 1em;
-  transition: background-color .3s linear;
-  color: #666;
-  background-color: #fff;
+  transition: all .3s linear;
+  color: #fff;
+  background-color: #333;
   border-style: solid;
   border-width: 1px;
-  border-color: #ccc;
-  padding: 0.5em 2em;
+  border-color: #333;
+  padding: 0.393em 2em;
   font-size: 1em;
   line-height: 1.5; }
   .vipui button.mini {
-    padding: 0.12em 0.5em;
-    font-size: 0.75em;
+    padding: 0.126em 1.5em;
+    font-size: 0.8571em;
     line-height: 1.5; }
   .vipui button.small {
-    padding: 0.25em 1em;
-    font-size: 0.875em;
+    padding: 0.292em 2em;
+    font-size: 0.8571em;
     line-height: 1.5; }
   .vipui button.large {
-    padding: 1em 2.5em;
-    font-size: 1.25em;
+    padding: 0.6em 2em;
+    font-size: 1.0714em;
     line-height: 1.5; }
   .vipui button.huge {
-    padding: 1.8em 3.5em;
-    font-size: 2em;
+    padding: 0.5em 2em;
+    font-size: 1.1429em;
     line-height: 1.5; }
   .vipui button.block {
     display: block;
     width: 100%; }
   .vipui button:focus {
     outline: 0; }
-  .vipui button:hover {
-    color: #666;
-    background-color: #F6F6F6; }
-  .vipui button:active {
-    color: #666;
-    background-color: #f2f2f2; }
   .vipui button.default {
+    color: #fff;
+    background-color: #333;
     border-style: solid;
     border-width: 1px;
-    border-color: #ccc;
-    padding: 0.5em 2em;
-    font-size: 1em;
-    line-height: 1.5; }
+    border-color: #333; }
+    .vipui button.default:hover {
+      color: #fff;
+      background-color: #4d4d4d;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #4d4d4d; }
+    .vipui button.default:active {
+      color: #fff;
+      background-color: #1a1a1a;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #1a1a1a; }
+    .vipui button.default.ghost {
+      color: #666;
+      background-color: #fff;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc; }
+      .vipui button.default.ghost:hover {
+        color: #666;
+        background-color: #f2f2f2; }
+      .vipui button.default.ghost:active {
+        color: #666;
+        background-color: #ededed; }
   .vipui button.brand {
     color: #fff;
     background-color: #EC008C;
@@ -62,16 +77,16 @@
     border-color: #EC008C; }
     .vipui button.brand:hover {
       color: #fff;
-      background-color: #ff3aaf;
+      background-color: #ff20a4;
       border-style: solid;
       border-width: 1px;
-      border-color: #ff3aaf; }
+      border-color: #ff20a4; }
     .vipui button.brand:active {
       color: #fff;
-      background-color: #d3007d;
+      background-color: #b9006e;
       border-style: solid;
       border-width: 1px;
-      border-color: #d3007d; }
+      border-color: #b9006e; }
     .vipui button.brand.ghost {
       color: #EC008C;
       background-color: #fff;
@@ -80,52 +95,54 @@
       border-color: #EC008C; }
       .vipui button.brand.ghost:hover {
         color: #EC008C;
-        background-color: white;
+        background-color: #fff6fb;
         border-style: solid;
         border-width: 1px;
-        border-color: #ff3aaf; }
+        border-color: #EC008C; }
       .vipui button.brand.ghost:active {
-        color: #d3007d;
-        background-color: #fff;
+        color: #EC008C;
+        background-color: #ffecf7;
         border-style: solid;
         border-width: 1px;
-        border-color: #d3007d; }
-  .vipui button.secondary {
+        border-color: #EC008C; }
+  .vipui button[disabled] {
+    cursor: not-allowed;
     color: #fff;
-    background-color: #333;
+    background-color: #ccc;
     border-style: solid;
     border-width: 1px;
-    border-color: #333; }
-    .vipui button.secondary:hover {
+    border-color: #ccc; }
+    .vipui button[disabled]:hover {
       color: #fff;
-      background-color: #595959;
+      background-color: #ccc;
       border-style: solid;
       border-width: 1px;
-      border-color: #595959; }
-    .vipui button.secondary:active {
+      border-color: #ccc; }
+    .vipui button[disabled]:active {
       color: #fff;
-      background-color: #262626;
+      background-color: #ccc;
       border-style: solid;
       border-width: 1px;
-      border-color: #262626; }
-    .vipui button.secondary.ghost {
-      color: #333;
+      border-color: #ccc; }
+    .vipui button[disabled].ghost {
+      color: #ccc;
       background-color: #fff;
       border-style: solid;
       border-width: 1px;
-      border-color: #333; }
-      .vipui button.secondary.ghost:hover {
-        color: #333;
-        background-color: white;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #595959; }
-      .vipui button.secondary.ghost:active {
-        color: #262626;
+      border-color: #ccc; }
+      .vipui button[disabled].ghost:hover {
+        color: #ccc;
         background-color: #fff;
         border-style: solid;
         border-width: 1px;
-        border-color: #262626; }
-  .vipui button[disabled] {
-    cursor: not-allowed;
-    opacity: .5; }
+        border-color: #ccc; }
+      .vipui button[disabled].ghost:active {
+        color: #ccc;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ccc; }
+  .vipui button .icon + span {
+    margin-left: 0.5em; }
+  .vipui button.bold {
+    font-weight: bold; }

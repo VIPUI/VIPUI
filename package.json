@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/VIPUI/VIPUI#readme",
   "devDependencies": {
+    "font-awesome": "^4.7.0",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0"
   }
