@@ -26,4 +26,5 @@ Pure is tested and works in:
 * iOS 6-8
 * Android 4.x
 
-And maybe it worked in other browsers too (but we did not really test it on them, maybe you can test that by yourself:laughing:)
+And maybe it worked in other browsers too 
+(but we did not really test it on them, maybe you can test that by yourself:laughing:)
