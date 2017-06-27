@@ -7,7 +7,13 @@ To get started using VIPUI, you just need two part, the CSS part and the JavaScr
 You can include the VIPUI CSS file in your project :
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/vipui/dist/css/vipui.css">
+<link rel="stylesheet" href="https://yoursite.com/vipui/dist/css/vipui.css">
+```
+
+You can include the VIPUI JavaScript file in your project :
+
+```html
+<src type="text/javascript" href="https://yoursite.com/vipui/dist/js/vipui.js"></script>
 ```
 
 Browser Support and Testing
@@ -20,4 +26,4 @@ Pure is tested and works in:
 * iOS 6-8
 * Android 4.x
 
-But maybe it worked in other browsers (but we did not test it on them:laughing:)
+And maybe it worked in other browsers too (but we did not really test it on them, maybe you can test that by yourself:laughing:)
