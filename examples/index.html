@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VIPUI exmaples</title>
     <link rel="stylesheet" href="../dist/css/vipui.css">
+    <link href="rainbow.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../node_modules/.4.7.0@font-awesome/css/font-awesome.css">
 </head>
 
@@ -30,20 +31,58 @@
         <button type="button" class="brand ghost block">ghost block button</button>
     </p>
 
+    <pre>
+        <code data-language="html">
+            <!-- normal button -->
+            <button type="button" class="default">default button</button>
+            <button type="button" class="default ghost">ghost default button</button>
+            <button type="button" class="brand">brand button</button>
+            <button type="button" class="brand ghost">ghost brand button</button>
+            <button type="button" disabled class="default">disabled button</button>
+            <button type="button" disabled class="default ghost">disabled button</button>
+
+            <!-- block button -->
+            <button type="button" class="brand block">block button</button>
+            <button type="button" class="brand ghost block">ghost block button</button>
+        </code>
+    </pre>
+
     <h4>Button Icon 图标按钮</h4>
 
-    <button type="button" class="default">
-        <i class="icon fa fa-bath" aria-hidden="true"></i>
-        <span>default button</span>
-    </button>
-    <button type="button" class="brand">
-        <i class="icon fa fa-bath" aria-hidden="true"></i>
-        <span>brand button</span>
-    </button>
-    <button type="button" class="default ghost">
-        <i class="icon fa fa-bath" aria-hidden="true"></i>
-        <span>ghost default button</span>
-    </button>
+    <p>
+        <button type="button" class="default">
+            <i class="icon fa fa-bath" aria-hidden="true"></i>
+            <span>default button</span>
+        </button>
+        <button type="button" class="brand">
+            <i class="icon fa fa-bath" aria-hidden="true"></i>
+            <span>brand button</span>
+        </button>
+        <button type="button" class="default ghost">
+            <i class="icon fa fa-bath" aria-hidden="true"></i>
+            <span>ghost default button</span>
+        </button>
+    </p>
+
+    <pre>
+        <code data-language="html">
+            <!-- icon buttons -->
+            <button type="button" class="default">
+                <i class="icon fa fa-bath" aria-hidden="true"></i>
+                <span>default button</span>
+            </button>
+
+            <button type="button" class="brand">
+                <i class="icon fa fa-bath" aria-hidden="true"></i>
+                <span>brand button</span>
+            </button>
+
+            <button type="button" class="default ghost">
+                <i class="icon fa fa-bath" aria-hidden="true"></i>
+                <span>ghost default button</span>
+            </button>
+        </code>
+    </pre>
 
     <h4>Button Size 按钮尺寸</h4>
 
@@ -72,6 +111,34 @@
         <button type="button" class="huge brand bold">huge size & brand color</button>
     </p>
 
+    <pre>
+        <code data-language="html">
+            <!-- mini size button -->
+            <button type="button" class="mini">mini size</button>
+            <button type="button" class="mini brand">mini size & brand color</button>
+            
+            <!-- small size button -->
+            <button type="button" class="small">small size</button>
+            <button type="button" class="small brand">small size & brand color</button>
+            
+            <!-- default size button -->
+            <button type="button" class="default">default size</button>
+            <button type="button" class="default brand">default size & brand color</button>
+            
+            <!-- large size button -->
+            <button type="button" class="large">large size</button>
+            <button type="button" class="large brand">large size & brand color</button>
+            
+            <!-- huge size button -->
+            <button type="button" class="huge bold">huge size</button>
+            <button type="button" class="huge brand bold">huge size & brand color</button>
+        
+        </code>
+    </pre>
+
+    <h3>Forms 表单</h3>
+
+    <script src="rainbow.min.js"></script>
     <script src="../dist/js/vipui.js"></script>
 </body>
 
