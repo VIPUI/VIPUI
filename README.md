@@ -19,7 +19,7 @@ You can include the VIPUI JavaScript file in your project :
 Browser Support and Testing
 ---------------------------
 
-Pure is tested and works in:
+VIPUI is tested and works in:
 
 * IE 8+
 * Latest Stable: Firefox, Chrome, Safari
