@@ -3,51 +3,60 @@ $buttonTextColor: $defaultTextColor !default;
 $buttonBackgroundColor: $defaultBackgroundColor !default;
 $buttonHoverBackgroundColor: lighten($defaultBackgroundColor, 10%);
 $buttonActiveBackgroundColor: darken($defaultBackgroundColor, 10%);
+
 // Default Ghost Button Colors
-$buttonGhostGhostTextColor: $color-666 !default;
+$buttonGhostGhostTextColor: #666 !default;
 $buttonGhostBackgroundColor: $white !default;
 $buttonGhostHoverBackgroundColor: lighten($defaultBackgroundColor, 75%);
 $buttonGhostActiveBackgroundColor: lighten($defaultBackgroundColor, 73%);
+
 // Primary Button Colors
 $buttonTextBrandColor: $white !default;
 $buttonBackgroundBrandColor: $brandColor !default;
 $buttonHoverBackgroundBrandColor: lighten($brandColor, 10%);
 $buttonActiveBackgroundBrandColor: darken($brandColor, 10%);
+
 // Primary Ghost Button Colors
 $buttonGhostTextBrandColor: $brandColor !default;
 $buttonGhostBackgroundBrandColor: $white !default;
 $buttonGhostHoverBackgroundBrandColor: lighten($brandColor, 52%);
 $buttonGhostActiveBackgroundBrandColor: lighten($brandColor, 50%);
+
 // Disabled Button Colors
 $buttonDisabledColor: $white !default;
-$buttonDisabledBackgroundBrandColor: $color-ccc !default;
-$buttonGhostDisabledColor: $color-ccc !default;
+$buttonDisabledBackgroundBrandColor: #ccc !default;
+$buttonGhostDisabledColor: #ccc !default;
 $buttonGhostDisabledBackgroundBrandColor: $white !default;
+
 // Basic
 $buttonBorderRadius: $borderRadius !default;
 $buttonBorderStyle: solid !default;
 $buttonBorderWidth: 1px !default;
 $buttonBorderColor: $defaultBorderColor !default;
-$buttonGhostBorderColor: $color-ccc !default;
+$buttonGhostBorderColor: #ccc !default;
 $buttonBorderBrandColor: $brandColor !default;
 $buttonGhostBorderBrandColor: $brandColor !default;
+
 // Padding Size
 $buttonPaddingMini: .126em 1.5em;
 $buttonPaddingSmall: .292em 2em;
 $buttonPaddingDefault: .3930em 2em;
 $buttonPaddingLarge: .6em 2em;
 $buttonPaddingHuge: .5em 2em;
+
 // Font Size
 $buttonFontSizeMini: .8571em;
 $buttonFontSizeSmall: .8571em;
 $buttonFontSizeDefault: 1em;
 $buttonFontSizeLarge: 1.0714em;
 $buttonFontSizeHuge: 1.1429em;
-// Font Size
+
+// Line Height
 $buttonLineHeightMini: 1.5;
 $buttonLineHeightSmall: 1.5;
 $buttonLineHeightDefault: 1.5;
 $buttonLineHeightLarge: 1.5;
 $buttonLineHeightHuge: 1.5;
+
 // Button Icon Margin
 $buttonIconMarginLeft: .5em;

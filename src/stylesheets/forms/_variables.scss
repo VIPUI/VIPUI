@@ -1,0 +1,18 @@
+// Default Form Input
+$inputColor: #333 !default;
+$inputBackgroundColor: $white !default;
+$inputPlaceholderColor: #bbb;
+$inputBorderStyle: solid;
+$inputBorderWidth: 1px;
+$inputBorderColor: #e5e5e5;
+$inputFocusBorderColor: #333;
+$inputBorderRadius: $borderRadius !default;
+
+// Size
+$inputPaddingDefault: .5em .7em;
+$inputFontSizeDefault: 1em;
+$inputLineHeightDefault: 1.3;
+
+// Extra
+$inputErrorPlaceholderColor: #E9A7AB;
+$inputErrorBorderColor: #D93333;

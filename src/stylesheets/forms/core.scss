@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+
+.vipui {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="week"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    select,
+    textarea {
+        display: inline-block;
+        vertical-align: middle;
+        transition: border-color .3s linear;
+        border-radius: $inputBorderRadius;
+
+        /* basic style */
+        @include basicStyle($inputColor, $inputBackgroundColor);
+
+        /* border style */
+        @include borderStyle($inputBorderStyle, $inputBorderWidth, $inputBorderColor);
+
+        /* size style */
+        @include sizeStyle($inputPaddingDefault, $inputFontSizeDefault, $inputLineHeightDefault);
+
+        &:focus {
+            outline: 0;
+            border-color: $inputFocusBorderColor;
+        }
+
+        &::placeholder {
+            color: $inputPlaceholderColor;
+        }
+
+        /* Error Style */
+        &.error {
+            border-color: $inputErrorBorderColor;
+
+            &::placeholder {
+                color: $inputErrorPlaceholderColor;
+            }
+
+            &:focus {
+                outline: 0;
+                border-color: $inputFocusBorderColor;
+
+                &::placeholder {
+                    color: $inputPlaceholderColor;
+                }
+            }
+        }
+    }
+}

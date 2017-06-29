@@ -11,8 +11,15 @@
         cursor: pointer;
         box-sizing: border-box;
         transition: all .3s linear;
+        border-radius: $buttonBorderRadius;
+
+        /* basic style */
         @include basicStyle($buttonTextColor, $buttonBackgroundColor);
+
+        /* border style */
         @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderColor);
+
+        /* size style */
         @include sizeStyle($buttonPaddingDefault, $buttonFontSizeDefault, $buttonLineHeightDefault);
 
         /* mini size */

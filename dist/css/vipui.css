@@ -14,13 +14,18 @@
   cursor: pointer;
   box-sizing: border-box;
   transition: all .3s linear;
+  border-radius: 0;
+  /* basic style */
   color: #fff;
   background-color: #333;
+  /* border style */
   border-style: solid;
   border-width: 1px;
   border-color: #333;
+  /* size style */
   padding: 0.393em 2em;
   font-size: 1em;
+  font-weight: 100;
   line-height: 1.5;
   /* mini size */
   /* small size */
@@ -36,18 +41,22 @@
   .vipui button.mini {
     padding: 0.126em 1.5em;
     font-size: 0.8571em;
+    font-weight: 100;
     line-height: 1.5; }
   .vipui button.small {
     padding: 0.292em 2em;
     font-size: 0.8571em;
+    font-weight: 100;
     line-height: 1.5; }
   .vipui button.large {
     padding: 0.6em 2em;
     font-size: 1.0714em;
+    font-weight: 100;
     line-height: 1.5; }
   .vipui button.huge {
     padding: 0.5em 2em;
     font-size: 1.1429em;
+    font-weight: 100;
     line-height: 1.5; }
   .vipui button.block {
     display: block;
@@ -161,3 +170,142 @@
     margin-left: 0.5em; }
   .vipui button.bold {
     font-weight: bold; }
+
+/* Form Mixin */
+.vipui input[type="text"],
+.vipui input[type="password"],
+.vipui input[type="email"],
+.vipui input[type="url"],
+.vipui input[type="date"],
+.vipui input[type="month"],
+.vipui input[type="time"],
+.vipui input[type="datetime"],
+.vipui input[type="datetime-local"],
+.vipui input[type="week"],
+.vipui input[type="number"],
+.vipui input[type="search"],
+.vipui input[type="tel"],
+.vipui input[type="color"],
+.vipui select,
+.vipui textarea {
+  display: inline-block;
+  vertical-align: middle;
+  transition: border-color .3s linear;
+  border-radius: 0;
+  /* basic style */
+  color: #333;
+  background-color: #fff;
+  /* border style */
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5e5e5;
+  /* size style */
+  padding: 0.5em 0.7em;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.3;
+  /* Error Style */ }
+  .vipui input[type="text"]:focus,
+  .vipui input[type="password"]:focus,
+  .vipui input[type="email"]:focus,
+  .vipui input[type="url"]:focus,
+  .vipui input[type="date"]:focus,
+  .vipui input[type="month"]:focus,
+  .vipui input[type="time"]:focus,
+  .vipui input[type="datetime"]:focus,
+  .vipui input[type="datetime-local"]:focus,
+  .vipui input[type="week"]:focus,
+  .vipui input[type="number"]:focus,
+  .vipui input[type="search"]:focus,
+  .vipui input[type="tel"]:focus,
+  .vipui input[type="color"]:focus,
+  .vipui select:focus,
+  .vipui textarea:focus {
+    outline: 0;
+    border-color: #333; }
+  .vipui input[type="text"]::placeholder,
+  .vipui input[type="password"]::placeholder,
+  .vipui input[type="email"]::placeholder,
+  .vipui input[type="url"]::placeholder,
+  .vipui input[type="date"]::placeholder,
+  .vipui input[type="month"]::placeholder,
+  .vipui input[type="time"]::placeholder,
+  .vipui input[type="datetime"]::placeholder,
+  .vipui input[type="datetime-local"]::placeholder,
+  .vipui input[type="week"]::placeholder,
+  .vipui input[type="number"]::placeholder,
+  .vipui input[type="search"]::placeholder,
+  .vipui input[type="tel"]::placeholder,
+  .vipui input[type="color"]::placeholder,
+  .vipui select::placeholder,
+  .vipui textarea::placeholder {
+    color: #bbb; }
+  .vipui input[type="text"].error,
+  .vipui input[type="password"].error,
+  .vipui input[type="email"].error,
+  .vipui input[type="url"].error,
+  .vipui input[type="date"].error,
+  .vipui input[type="month"].error,
+  .vipui input[type="time"].error,
+  .vipui input[type="datetime"].error,
+  .vipui input[type="datetime-local"].error,
+  .vipui input[type="week"].error,
+  .vipui input[type="number"].error,
+  .vipui input[type="search"].error,
+  .vipui input[type="tel"].error,
+  .vipui input[type="color"].error,
+  .vipui select.error,
+  .vipui textarea.error {
+    border-color: #D93333; }
+    .vipui input[type="text"].error::placeholder,
+    .vipui input[type="password"].error::placeholder,
+    .vipui input[type="email"].error::placeholder,
+    .vipui input[type="url"].error::placeholder,
+    .vipui input[type="date"].error::placeholder,
+    .vipui input[type="month"].error::placeholder,
+    .vipui input[type="time"].error::placeholder,
+    .vipui input[type="datetime"].error::placeholder,
+    .vipui input[type="datetime-local"].error::placeholder,
+    .vipui input[type="week"].error::placeholder,
+    .vipui input[type="number"].error::placeholder,
+    .vipui input[type="search"].error::placeholder,
+    .vipui input[type="tel"].error::placeholder,
+    .vipui input[type="color"].error::placeholder,
+    .vipui select.error::placeholder,
+    .vipui textarea.error::placeholder {
+      color: #E9A7AB; }
+    .vipui input[type="text"].error:focus,
+    .vipui input[type="password"].error:focus,
+    .vipui input[type="email"].error:focus,
+    .vipui input[type="url"].error:focus,
+    .vipui input[type="date"].error:focus,
+    .vipui input[type="month"].error:focus,
+    .vipui input[type="time"].error:focus,
+    .vipui input[type="datetime"].error:focus,
+    .vipui input[type="datetime-local"].error:focus,
+    .vipui input[type="week"].error:focus,
+    .vipui input[type="number"].error:focus,
+    .vipui input[type="search"].error:focus,
+    .vipui input[type="tel"].error:focus,
+    .vipui input[type="color"].error:focus,
+    .vipui select.error:focus,
+    .vipui textarea.error:focus {
+      outline: 0;
+      border-color: #333; }
+      .vipui input[type="text"].error:focus::placeholder,
+      .vipui input[type="password"].error:focus::placeholder,
+      .vipui input[type="email"].error:focus::placeholder,
+      .vipui input[type="url"].error:focus::placeholder,
+      .vipui input[type="date"].error:focus::placeholder,
+      .vipui input[type="month"].error:focus::placeholder,
+      .vipui input[type="time"].error:focus::placeholder,
+      .vipui input[type="datetime"].error:focus::placeholder,
+      .vipui input[type="datetime-local"].error:focus::placeholder,
+      .vipui input[type="week"].error:focus::placeholder,
+      .vipui input[type="number"].error:focus::placeholder,
+      .vipui input[type="search"].error:focus::placeholder,
+      .vipui input[type="tel"].error:focus::placeholder,
+      .vipui input[type="color"].error:focus::placeholder,
+      .vipui select.error:focus::placeholder,
+      .vipui textarea.error:focus::placeholder {
+        color: #bbb; }
