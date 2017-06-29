@@ -5,12 +5,14 @@
   font-size: 14px; }
 
 /* Button Mixin */
-.vipui button {
+.vipui button,
+.vipui a {
   display: inline-block;
   zoom: 1;
   white-space: nowrap;
   vertical-align: middle;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
   box-sizing: border-box;
   transition: all .3s linear;
@@ -38,137 +40,169 @@
   /* disabled status */
   /* icon */
   /* button bold text */ }
-  .vipui button.mini {
+  .vipui button.mini,
+  .vipui a.mini {
     padding: 0.126em 1.5em;
     font-size: 0.8571em;
     font-weight: 100;
     line-height: 1.5; }
-  .vipui button.small {
+  .vipui button.small,
+  .vipui a.small {
     padding: 0.292em 2em;
     font-size: 0.8571em;
     font-weight: 100;
     line-height: 1.5; }
-  .vipui button.large {
+  .vipui button.large,
+  .vipui a.large {
     padding: 0.6em 2em;
     font-size: 1.0714em;
     font-weight: 100;
     line-height: 1.5; }
-  .vipui button.huge {
+  .vipui button.huge,
+  .vipui a.huge {
     padding: 0.5em 2em;
     font-size: 1.1429em;
     font-weight: 100;
     line-height: 1.5; }
-  .vipui button.block {
+  .vipui button.block,
+  .vipui a.block {
     display: block;
     width: 100%; }
-  .vipui button:focus {
+  .vipui button:focus,
+  .vipui a:focus {
     outline: 0; }
-  .vipui button.default {
+  .vipui button.default,
+  .vipui a.default {
     color: #fff;
     background-color: #333;
     border-style: solid;
     border-width: 1px;
     border-color: #333; }
-    .vipui button.default:hover {
+    .vipui button.default:hover,
+    .vipui a.default:hover {
       color: #fff;
       background-color: #4d4d4d;
       border-style: solid;
       border-width: 1px;
       border-color: #4d4d4d; }
-    .vipui button.default:active {
+    .vipui button.default:active,
+    .vipui a.default:active {
       color: #fff;
       background-color: #1a1a1a;
       border-style: solid;
       border-width: 1px;
       border-color: #1a1a1a; }
-    .vipui button.default.ghost {
+    .vipui button.default.ghost,
+    .vipui a.default.ghost {
       color: #666;
       background-color: #fff;
       border-style: solid;
       border-width: 1px;
       border-color: #ccc; }
-      .vipui button.default.ghost:hover {
+      .vipui button.default.ghost:hover,
+      .vipui a.default.ghost:hover {
         color: #666;
         background-color: #f2f2f2; }
-      .vipui button.default.ghost:active {
+      .vipui button.default.ghost:active,
+      .vipui a.default.ghost:active {
         color: #666;
         background-color: #ededed; }
-  .vipui button.brand {
+  .vipui button.brand,
+  .vipui a.brand {
     color: #fff;
     background-color: #EC008C;
     border-style: solid;
     border-width: 1px;
     border-color: #EC008C; }
-    .vipui button.brand:hover {
+    .vipui button.brand:hover,
+    .vipui a.brand:hover {
       color: #fff;
       background-color: #ff20a4;
       border-style: solid;
       border-width: 1px;
       border-color: #ff20a4; }
-    .vipui button.brand:active {
+    .vipui button.brand:active,
+    .vipui a.brand:active {
       color: #fff;
       background-color: #b9006e;
       border-style: solid;
       border-width: 1px;
       border-color: #b9006e; }
-    .vipui button.brand.ghost {
+    .vipui button.brand.ghost,
+    .vipui a.brand.ghost {
       color: #EC008C;
       background-color: #fff;
       border-style: solid;
       border-width: 1px;
       border-color: #EC008C; }
-      .vipui button.brand.ghost:hover {
+      .vipui button.brand.ghost:hover,
+      .vipui a.brand.ghost:hover {
         color: #EC008C;
         background-color: #fff6fb;
         border-style: solid;
         border-width: 1px;
         border-color: #EC008C; }
-      .vipui button.brand.ghost:active {
+      .vipui button.brand.ghost:active,
+      .vipui a.brand.ghost:active {
         color: #EC008C;
         background-color: #ffecf7;
         border-style: solid;
         border-width: 1px;
         border-color: #EC008C; }
-  .vipui button[disabled] {
+  .vipui button[disabled], .vipui button.disabled,
+  .vipui a[disabled],
+  .vipui a.disabled {
     cursor: not-allowed;
     color: #fff;
     background-color: #ccc;
     border-style: solid;
     border-width: 1px;
     border-color: #ccc; }
-    .vipui button[disabled]:hover {
+    .vipui button[disabled]:hover, .vipui button.disabled:hover,
+    .vipui a[disabled]:hover,
+    .vipui a.disabled:hover {
       color: #fff;
       background-color: #ccc;
       border-style: solid;
       border-width: 1px;
       border-color: #ccc; }
-    .vipui button[disabled]:active {
+    .vipui button[disabled]:active, .vipui button.disabled:active,
+    .vipui a[disabled]:active,
+    .vipui a.disabled:active {
       color: #fff;
       background-color: #ccc;
       border-style: solid;
       border-width: 1px;
       border-color: #ccc; }
-    .vipui button[disabled].ghost {
+    .vipui button[disabled].ghost, .vipui button.disabled.ghost,
+    .vipui a[disabled].ghost,
+    .vipui a.disabled.ghost {
       color: #ccc;
       background-color: #fff;
       border-style: solid;
       border-width: 1px;
       border-color: #ccc; }
-      .vipui button[disabled].ghost:hover {
+      .vipui button[disabled].ghost:hover, .vipui button.disabled.ghost:hover,
+      .vipui a[disabled].ghost:hover,
+      .vipui a.disabled.ghost:hover {
         color: #ccc;
         background-color: #fff;
         border-style: solid;
         border-width: 1px;
         border-color: #ccc; }
-      .vipui button[disabled].ghost:active {
+      .vipui button[disabled].ghost:active, .vipui button.disabled.ghost:active,
+      .vipui a[disabled].ghost:active,
+      .vipui a.disabled.ghost:active {
         color: #ccc;
         background-color: #fff;
         border-style: solid;
         border-width: 1px;
         border-color: #ccc; }
-  .vipui button .icon + span {
+  .vipui button .icon + span,
+  .vipui a .icon + span {
     margin-left: 0.5em; }
-  .vipui button.bold {
+  .vipui button.bold,
+  .vipui a.bold {
     font-weight: bold; }
 
 /* Form Mixin */
