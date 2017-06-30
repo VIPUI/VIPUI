@@ -13,6 +13,7 @@
         box-sizing: border-box;
         transition: all .3s linear;
         border-radius: $buttonBorderRadius;
+        min-width: 100px;
 
         /* basic style */
         @include basicStyle($buttonTextColor, $buttonBackgroundColor);
@@ -22,54 +23,63 @@
 
         /* size style */
         @include sizeStyle($buttonPaddingDefault, $buttonFontSizeDefault, $buttonLineHeightDefault);
+
+        &:hover {
+            @include basicStyle($buttonTextColor, $buttonHoverBackgroundColor);
+            @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonHoverBackgroundColor);
+        }
+
+        &:active {
+            @include basicStyle($buttonTextColor, $buttonActiveBackgroundColor);
+            @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonActiveBackgroundColor);
+        }
+
+        &.ghost {
+            @include basicStyle($buttonGhostGhostTextColor, $buttonGhostBackgroundColor);
+            @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonGhostBorderColor);
+            &:hover {
+                @include basicStyle($buttonGhostGhostTextColor, $buttonGhostHoverBackgroundColor);
+            }
+            &:active {
+                @include basicStyle($buttonGhostGhostTextColor, $buttonGhostActiveBackgroundColor);
+            }
+        }
+
         /* mini size */
         &.mini {
             @include sizeStyle($buttonPaddingMini, $buttonFontSizeMini, $buttonLineHeightMini);
+            min-width: 80px;
         }
+
         /* small size */
         &.small {
             @include sizeStyle($buttonPaddingSmall, $buttonFontSizeSmall, $buttonLineHeightSmall);
+            min-width: 88px;
         }
+
         /* large size */
         &.large {
             @include sizeStyle($buttonPaddingLarge, $buttonFontSizeLarge, $buttonLineHeightLarge);
+            min-width: 120px;
         }
+
         /* huge size */
         &.huge {
             @include sizeStyle($buttonPaddingHuge, $buttonFontSizeHuge, $buttonLineHeightHuge);
+            min-width: 132px;
         }
+
         /* block button */
         &.block {
             display: block;
             width: 100%;
         }
+
         /* clear focus status */
         &:focus {
             outline: 0;
         }
-        /* default button */
-        &.default {
-            @include basicStyle($buttonTextColor, $buttonBackgroundColor);
-            @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonBorderColor);
-            &:hover {
-                @include basicStyle($buttonTextColor, $buttonHoverBackgroundColor);
-                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonHoverBackgroundColor);
-            }
-            &:active {
-                @include basicStyle($buttonTextColor, $buttonActiveBackgroundColor);
-                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonActiveBackgroundColor);
-            }
-            &.ghost {
-                @include basicStyle($buttonGhostGhostTextColor, $buttonGhostBackgroundColor);
-                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonGhostBorderColor);
-                &:hover {
-                    @include basicStyle($buttonGhostGhostTextColor, $buttonGhostHoverBackgroundColor);
-                }
-                &:active {
-                    @include basicStyle($buttonGhostGhostTextColor, $buttonGhostActiveBackgroundColor);
-                }
-            }
-        }
+
         /* brand button */
         &.brand {
             @include basicStyle($buttonTextBrandColor, $buttonBackgroundBrandColor);
@@ -95,6 +105,7 @@
                 }
             }
         }
+
         /* disabled status */
         &[disabled],
         &.disabled {
@@ -122,12 +133,14 @@
                 }
             }
         }
+
         /* icon */
         .icon {
             &+span {
                 margin-left: $buttonIconMarginLeft;
             }
         }
+
         /* button bold text */
         &.bold {
             font-weight: bold;
