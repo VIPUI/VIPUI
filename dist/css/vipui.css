@@ -3,6 +3,8 @@
 /* Colors */
 .vipui {
   font-size: 14px; }
+  .vipui * {
+    box-sizing: border-box; }
 
 /* Button Mixin */
 .vipui button,
@@ -17,6 +19,7 @@
   box-sizing: border-box;
   transition: all .3s linear;
   border-radius: 0;
+  min-width: 100px;
   /* basic style */
   color: #fff;
   background-color: #333;
@@ -35,35 +38,67 @@
   /* huge size */
   /* block button */
   /* clear focus status */
-  /* default button */
   /* brand button */
   /* disabled status */
   /* icon */
   /* button bold text */ }
+  .vipui button:hover,
+  .vipui a:hover {
+    color: #fff;
+    background-color: #4d4d4d;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4d4d4d; }
+  .vipui button:active,
+  .vipui a:active {
+    color: #fff;
+    background-color: #1a1a1a;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1a1a1a; }
+  .vipui button.ghost,
+  .vipui a.ghost {
+    color: #666;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc; }
+    .vipui button.ghost:hover,
+    .vipui a.ghost:hover {
+      color: #666;
+      background-color: #f2f2f2; }
+    .vipui button.ghost:active,
+    .vipui a.ghost:active {
+      color: #666;
+      background-color: #ededed; }
   .vipui button.mini,
   .vipui a.mini {
     padding: 0.126em 1.5em;
     font-size: 0.8571em;
     font-weight: 100;
-    line-height: 1.5; }
+    line-height: 1.5;
+    min-width: 80px; }
   .vipui button.small,
   .vipui a.small {
     padding: 0.292em 2em;
     font-size: 0.8571em;
     font-weight: 100;
-    line-height: 1.5; }
+    line-height: 1.5;
+    min-width: 88px; }
   .vipui button.large,
   .vipui a.large {
     padding: 0.6em 2em;
     font-size: 1.0714em;
     font-weight: 100;
-    line-height: 1.5; }
+    line-height: 1.5;
+    min-width: 120px; }
   .vipui button.huge,
   .vipui a.huge {
     padding: 0.5em 2em;
     font-size: 1.1429em;
     font-weight: 100;
-    line-height: 1.5; }
+    line-height: 1.5;
+    min-width: 132px; }
   .vipui button.block,
   .vipui a.block {
     display: block;
@@ -71,42 +106,6 @@
   .vipui button:focus,
   .vipui a:focus {
     outline: 0; }
-  .vipui button.default,
-  .vipui a.default {
-    color: #fff;
-    background-color: #333;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #333; }
-    .vipui button.default:hover,
-    .vipui a.default:hover {
-      color: #fff;
-      background-color: #4d4d4d;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #4d4d4d; }
-    .vipui button.default:active,
-    .vipui a.default:active {
-      color: #fff;
-      background-color: #1a1a1a;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #1a1a1a; }
-    .vipui button.default.ghost,
-    .vipui a.default.ghost {
-      color: #666;
-      background-color: #fff;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #ccc; }
-      .vipui button.default.ghost:hover,
-      .vipui a.default.ghost:hover {
-        color: #666;
-        background-color: #f2f2f2; }
-      .vipui button.default.ghost:active,
-      .vipui a.default.ghost:active {
-        color: #666;
-        background-color: #ededed; }
   .vipui button.brand,
   .vipui a.brand {
     color: #fff;
@@ -273,7 +272,7 @@
   .vipui input[type="color"]::placeholder,
   .vipui select::placeholder,
   .vipui textarea::placeholder {
-    color: #bbb; }
+    color: #aaa; }
   .vipui input[type="text"].error,
   .vipui input[type="password"].error,
   .vipui input[type="email"].error,
@@ -342,4 +341,25 @@
       .vipui input[type="color"].error:focus::placeholder,
       .vipui select.error:focus::placeholder,
       .vipui textarea.error:focus::placeholder {
-        color: #bbb; }
+        color: #aaa; }
+
+.vipui .input-group {
+  position: relative;
+  width: 100%;
+  display: table;
+  border-collapse: separate; }
+  .vipui .input-group input {
+    display: table-cell;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0; }
+  .vipui .input-group .input-group-btn {
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle; }
+    .vipui .input-group .input-group-btn button {
+      margin-left: -1px; }
