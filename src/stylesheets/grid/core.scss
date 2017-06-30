@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+
+.vipui {
+
+    @if $enableGridSystem {
+
+        .row {
+            margin-left: -0.5em;
+            margin-right: -0.5em;
+
+            @include clearfix();
+        }
+
+        .show-row {
+            margin-bottom: 0.5em;
+            [class^=grid-] {
+                color: $brandColor;
+                padding: 0.5em;
+                background-color: lighten($brandColor, 52%);
+                border: 1px solid $brandColor;
+            }
+        }
+
+        @media (min-width: 992px) {
+            @for $i from 1 through $grid-columns {
+                .grid-#{$i} {
+                    float: left;
+                    width: #{$i / 12 * 100%};
+                }
+            }
+        }
+
+        .center {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

@@ -354,12 +354,72 @@
     width: 100%;
     position: relative;
     margin-bottom: 0; }
-  .vipui .input-group .input-group-btn {
+  .vipui .input-group .input-group-button {
     display: table-cell;
     position: relative;
     z-index: 2;
     white-space: nowrap;
     width: 1%;
     vertical-align: middle; }
-    .vipui .input-group .input-group-btn button {
+    .vipui .input-group .input-group-button button {
       margin-left: -1px; }
+
+/* Variables */
+.vipui .row {
+  margin-left: -0.5em;
+  margin-right: -0.5em; }
+  .vipui .row::after {
+    display: block;
+    clear: both;
+    content: ""; }
+
+.vipui .show-row {
+  margin-bottom: 0.5em; }
+  .vipui .show-row [class^=grid-] {
+    color: #EC008C;
+    padding: 0.5em;
+    background-color: #fff6fb;
+    border: 1px solid #EC008C; }
+
+@media (min-width: 992px) {
+  .vipui .grid-1 {
+    float: left;
+    width: 8.33333%; }
+  .vipui .grid-2 {
+    float: left;
+    width: 16.66667%; }
+  .vipui .grid-3 {
+    float: left;
+    width: 25%; }
+  .vipui .grid-4 {
+    float: left;
+    width: 33.33333%; }
+  .vipui .grid-5 {
+    float: left;
+    width: 41.66667%; }
+  .vipui .grid-6 {
+    float: left;
+    width: 50%; }
+  .vipui .grid-7 {
+    float: left;
+    width: 58.33333%; }
+  .vipui .grid-8 {
+    float: left;
+    width: 66.66667%; }
+  .vipui .grid-9 {
+    float: left;
+    width: 75%; }
+  .vipui .grid-10 {
+    float: left;
+    width: 83.33333%; }
+  .vipui .grid-11 {
+    float: left;
+    width: 91.66667%; }
+  .vipui .grid-12 {
+    float: left;
+    width: 100%; } }
+
+.vipui .center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
