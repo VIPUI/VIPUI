@@ -2,6 +2,7 @@
 @import "mixins";
 .vipui {
     button,
+    input[type="button"]
     a {
         display: inline-block;
         zoom: 1;
@@ -13,7 +14,7 @@
         box-sizing: border-box;
         transition: all .3s linear;
         border-radius: $buttonBorderRadius;
-        min-width: 100px;
+        min-width: $minWidthDefault;
 
         /* basic style */
         @include basicStyle($buttonTextColor, $buttonBackgroundColor);
@@ -35,38 +36,38 @@
         }
 
         &.ghost {
-            @include basicStyle($buttonGhostGhostTextColor, $buttonGhostBackgroundColor);
+            @include basicStyle($buttonGhostTextColor, $buttonGhostBackgroundColor);
             @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonGhostBorderColor);
             &:hover {
-                @include basicStyle($buttonGhostGhostTextColor, $buttonGhostHoverBackgroundColor);
+                @include basicStyle($buttonGhostTextColor, $buttonGhostHoverBackgroundColor);
             }
             &:active {
-                @include basicStyle($buttonGhostGhostTextColor, $buttonGhostActiveBackgroundColor);
+                @include basicStyle($buttonGhostTextColor, $buttonGhostActiveBackgroundColor);
             }
         }
 
         /* mini size */
         &.mini {
             @include sizeStyle($buttonPaddingMini, $buttonFontSizeMini, $buttonLineHeightMini);
-            min-width: 80px;
+            min-width: $minWidthMini;
         }
 
         /* small size */
         &.small {
             @include sizeStyle($buttonPaddingSmall, $buttonFontSizeSmall, $buttonLineHeightSmall);
-            min-width: 88px;
+            min-width: $minWidthSmall;
         }
 
         /* large size */
         &.large {
             @include sizeStyle($buttonPaddingLarge, $buttonFontSizeLarge, $buttonLineHeightLarge);
-            min-width: 120px;
+            min-width: $minWidthLarge;
         }
 
         /* huge size */
         &.huge {
             @include sizeStyle($buttonPaddingHuge, $buttonFontSizeHuge, $buttonLineHeightHuge);
-            min-width: 132px;
+            min-width: $minWidthHuge;
         }
 
         /* block button */
@@ -130,6 +131,49 @@
                 &:active {
                     @include basicStyle($buttonGhostDisabledColor, $buttonGhostDisabledBackgroundBrandColor);
                     @include borderStyle($buttonBorderStyle, $buttonBorderWidth, $buttonDisabledBackgroundBrandColor);
+                }
+            }
+        }
+
+        /* icon button */
+        &.icon {
+            /* basic style */
+            @include basicStyle($buttonGhostTextColor, transparent);
+
+            /* border style */
+            @include borderStyle($buttonBorderStyle, $buttonBorderWidth, transparent);
+
+            /* size style */
+            @include sizeStyle($buttonPaddingIcon, $buttonFontSizeDefault, $buttonLineHeightDefault);
+
+            min-width: inherit;
+
+            &:hover {
+                @include basicStyle($buttonGhostHoverTextColor, transparent);
+            }
+
+            &:active {
+                @include basicStyle($buttonGhostActiveTextColor, transparent);
+            }
+
+            &.brand {
+                /* basic style */
+                @include basicStyle($buttonBackgroundBrandColor, transparent);
+
+                /* border style */
+                @include borderStyle($buttonBorderStyle, $buttonBorderWidth, transparent);
+
+                /* size style */
+                @include sizeStyle($buttonPaddingIcon, $buttonFontSizeDefault, $buttonLineHeightDefault);
+
+                min-width: inherit;
+
+                &:hover {
+                    @include basicStyle($buttonHoverBackgroundBrandColor, transparent);
+                }
+
+                &:active {
+                    @include basicStyle($buttonActiveBackgroundBrandColor, transparent);
                 }
             }
         }

@@ -5,10 +5,12 @@ $buttonHoverBackgroundColor: lighten($defaultBackgroundColor, 10%);
 $buttonActiveBackgroundColor: darken($defaultBackgroundColor, 10%);
 
 // Default Ghost Button Colors
-$buttonGhostGhostTextColor: #666 !default;
+$buttonGhostTextColor: #666 !default;
 $buttonGhostBackgroundColor: $white !default;
 $buttonGhostHoverBackgroundColor: lighten($defaultBackgroundColor, 75%);
 $buttonGhostActiveBackgroundColor: lighten($defaultBackgroundColor, 73%);
+$buttonGhostHoverTextColor: lighten($buttonGhostTextColor, 10%);
+$buttonGhostActiveTextColor: darken($buttonGhostTextColor, 10%);
 
 // Primary Button Colors
 $buttonTextBrandColor: $white !default;
@@ -43,6 +45,7 @@ $buttonPaddingSmall: .292em 2em;
 $buttonPaddingDefault: .3930em 2em;
 $buttonPaddingLarge: .6em 2em;
 $buttonPaddingHuge: .5em 2em;
+$buttonPaddingIcon: .5em .5em;
 
 // Font Size
 $buttonFontSizeMini: .8571em;
@@ -57,6 +60,13 @@ $buttonLineHeightSmall: 1.5;
 $buttonLineHeightDefault: 1.5;
 $buttonLineHeightLarge: 1.5;
 $buttonLineHeightHuge: 1.5;
+
+// Min-Width Size
+$minWidthMini: 80px;
+$minWidthSmall: 88px;
+$minWidthDefault: 100px;
+$minWidthLarge: 120px;
+$minWidthHuge: 132px;
 
 // Button Icon Margin
 $buttonIconMarginLeft: .5em;
