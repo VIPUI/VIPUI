@@ -87,4 +87,37 @@
             }
         }
     }
+
+    .avatar {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        background-color: transparent;
+        position: relative;
+        border: 0;
+
+        &.circle {
+            border-radius: 50%;
+        }
+
+        &.rounded {
+            border-radius: $avatarBorderRadius;
+        }
+
+        &.thumbnail {
+            padding: $avatarPadding;
+            background-color: $avatarBackgroundColor;
+            border: 1px solid $avatarBorderColor;
+        }
+
+        &.floated {
+            &.right {
+                float: right;
+            }
+
+            &.left {
+                float: left;
+            }
+        }
+    }
 }

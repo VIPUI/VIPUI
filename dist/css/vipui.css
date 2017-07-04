@@ -449,6 +449,26 @@ a.bold {
     .vipui .input-group .input-group-button button {
       margin-left: -1px; }
 
+.vipui .avatar {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  background-color: transparent;
+  position: relative;
+  border: 0; }
+  .vipui .avatar.circle {
+    border-radius: 50%; }
+  .vipui .avatar.rounded {
+    border-radius: 5px; }
+  .vipui .avatar.thumbnail {
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc; }
+  .vipui .avatar.floated.right {
+    float: right; }
+  .vipui .avatar.floated.left {
+    float: left; }
+
 /* Variables */
 .vipui .row {
   margin-left: -0.5em;
