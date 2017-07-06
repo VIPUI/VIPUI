@@ -26,7 +26,7 @@
             @for $i from 1 through $grid-columns {
                 .grid-#{$i} {
                     float: left;
-                    width: #{$i / 12 * 100%};
+                    width: #{$i / $grid-columns * 100%};
                 }
             }
         }

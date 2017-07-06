@@ -4,3 +4,42 @@
         box-sizing: border-box;
     }
 }
+
+/* text layout */
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+/* table layout */
+.v-table {
+    display: table !important;
+}
+
+.v-table-row {
+    display: table-row !important;
+}
+
+.v-table-cell {
+    display: table-cell !important;
+}
+
+/* float layout */
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.float-none {
+  float: none !important;
+}
