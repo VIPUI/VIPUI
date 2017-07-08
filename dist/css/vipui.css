@@ -16,14 +16,17 @@
 .text-center {
   text-align: center !important; }
 
+.text-bold {
+  font-weight: bold !important; }
+
 /* table layout */
-.v-table {
+.table-box {
   display: table !important; }
 
-.v-table-row {
+.table-row-box {
   display: table-row !important; }
 
-.v-table-cell {
+.table-cell-box {
   display: table-cell !important; }
 
 /* float layout */
@@ -498,6 +501,9 @@ a.bold {
     float: right; }
   .vipui .avatar.floated.left {
     float: left; }
+
+.nav {
+  display: block; }
 
 /* Variables */
 .vipui .row {
