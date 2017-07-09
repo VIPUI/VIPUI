@@ -23,10 +23,16 @@
         }
 
         @media (min-width: 992px) {
-            @for $i from 1 through $grid-columns {
-                .grid-#{$i} {
+            @for $gridIndex from 1 through $grid-columns {
+                .grid-#{$gridIndex} {
                     float: left;
-                    width: #{$i / $grid-columns * 100%};
+                    width: #{$gridIndex / $grid-columns * 100%};
+
+                    @for $offsetIndex from 1 through $grid-columns {
+                        &.offset-#{$offsetIndex} {
+                            margin-left: #{$offsetIndex / $grid-columns * 100%};
+                        }
+                    }
                 }
             }
         }
