@@ -1,3 +1,50 @@
+@import "variables";
+@import "mixins";
+
 .nav {
     display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    /* tab nav */
+    &.tabs {
+        font-size: 0;
+        li {
+            font-size: 0;
+            display: inline-block;
+            position: relative;
+
+            &+li {
+                margin-left: $navTabMargin;
+            }
+
+            >a {
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: $black;
+                font-weight: $navTabFontWeight;
+                font-size: $navTabFontSize;
+                padding: $navTabPadding;
+                border-bottom: 2px solid transparent;
+                transition: border-bottom-color .3s linear;
+
+                >.number {
+                    font-style: normal;
+                    color: $brandColor;
+                }
+
+                &:hover {
+                    border-bottom-color: $brandColor;
+                }
+            }
+
+            &.active {
+                >a {
+                    border-bottom-color: $brandColor !important;
+                }
+            }
+        }
+    }
 }

@@ -503,7 +503,36 @@ a.bold {
     float: left; }
 
 .nav {
-  display: block; }
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* tab nav */ }
+  .nav.tabs {
+    font-size: 0; }
+    .nav.tabs li {
+      font-size: 0;
+      display: inline-block;
+      position: relative; }
+      .nav.tabs li + li {
+        margin-left: 10px; }
+      .nav.tabs li > a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 10px 15px;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color .3s linear; }
+        .nav.tabs li > a > .number {
+          font-style: normal;
+          color: #EC008C; }
+        .nav.tabs li > a:hover {
+          border-bottom-color: #EC008C; }
+      .nav.tabs li.active > a {
+        border-bottom-color: #EC008C !important; }
 
 /* Variables */
 .vipui .row {
