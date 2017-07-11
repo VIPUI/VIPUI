@@ -1,4 +1,27 @@
-$navTabFontSize: 16px;
-$navTabFontWeight: 800;
-$navTabPadding: 10px 15px;
-$navTabMargin: 10px;
+$navItemBorderWidth: 2px;
+
+// Tabs nav variables
+$navItemTabsFontSize: 18px;
+$navItemTabsNumberFontSize: 16px;
+$navItemTabsFontWeight: 800;
+$navItemTabsActiveFontWeight: 800;
+
+$navItemTabsPadding: 10px 15px;
+$navItemTabsMargin: 10px;
+
+$navItemTabsTextColor: $black;
+$navItemTabsNumberTextColor: $brandColor;
+$navItemTabsHoverBorderColor: $brandColor;
+
+// Sides nav variables
+$navItemSidesFontSize: 14px;
+$navItemSidesNumberFontSize: 12px;
+$navItemSidesFontWeight: 500;
+$navItemSidesActiveFontWeight: bold;
+
+$navItemSidesPadding: 10px;
+$navItemSidesMargin: 15px;
+
+$navItemSidesTextColor: $black;
+$navItemSidesNumberTextColor: $brandColor;
+$navItemSidesHoverBorderColor: $brandColor;

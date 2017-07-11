@@ -39,6 +39,22 @@
 .float-none {
   float: none !important; }
 
+/* row margin */
+.row-margin {
+  margin: .5em; }
+  .row-margin.top {
+    margin: .5em 0 0; }
+  .row-margin.bottom {
+    margin: 0 0 .5em; }
+
+/* row padding */
+.row-padding {
+  padding: .5em; }
+  .row-padding.top {
+    padding: .5em 0 0; }
+  .row-padding.bottom {
+    padding: 0 0 .5em; }
+
 /* Button Mixin */
 .vipui button,
 .vipui input[type="button"]
@@ -507,32 +523,183 @@ a.bold {
   padding: 0;
   margin: 0;
   list-style: none;
-  /* tab nav */ }
+  /* tab nav */
+  /* sides nav */ }
   .nav.tabs {
     font-size: 0; }
     .nav.tabs li {
       font-size: 0;
-      display: inline-block;
-      position: relative; }
+      position: relative;
+      text-align: center;
+      display: inline-block; }
       .nav.tabs li + li {
         margin-left: 10px; }
       .nav.tabs li > a {
         position: relative;
         display: inline-block;
         text-decoration: none;
-        color: #000;
-        font-weight: 800;
-        font-size: 16px;
         padding: 10px 15px;
+        transition: border-bottom-color .3s linear;
+        border-top: none;
         border-bottom: 2px solid transparent;
-        transition: border-bottom-color .3s linear; }
+        color: #000;
+        font-size: 18px;
+        font-weight: 800;
+        font-style: normal; }
         .nav.tabs li > a > .number {
           font-style: normal;
+          font-size: 16px;
           color: #EC008C; }
         .nav.tabs li > a:hover {
           border-bottom-color: #EC008C; }
       .nav.tabs li.active > a {
-        border-bottom-color: #EC008C !important; }
+        border-bottom-color: #EC008C !important;
+        font-weight: 800; }
+    .nav.tabs.top li {
+      font-size: 0;
+      position: relative;
+      text-align: center;
+      display: inline-block; }
+      .nav.tabs.top li + li {
+        margin-left: 10px; }
+      .nav.tabs.top li > a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: border-top-color .3s linear;
+        border-top: 2px solid transparent;
+        border-bottom: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: 800;
+        font-style: normal; }
+        .nav.tabs.top li > a > .number {
+          font-style: normal;
+          font-size: 16px;
+          color: #EC008C; }
+        .nav.tabs.top li > a:hover {
+          border-top-color: #EC008C; }
+      .nav.tabs.top li.active > a {
+        border-top-color: #EC008C !important;
+        font-weight: 800; }
+    .nav.tabs.bottom li {
+      font-size: 0;
+      position: relative;
+      text-align: center;
+      display: inline-block; }
+      .nav.tabs.bottom li + li {
+        margin-left: 10px; }
+      .nav.tabs.bottom li > a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: border-bottom-color .3s linear;
+        border-top: none;
+        border-bottom: 2px solid transparent;
+        color: #000;
+        font-size: 18px;
+        font-weight: 800;
+        font-style: normal; }
+        .nav.tabs.bottom li > a > .number {
+          font-style: normal;
+          font-size: 16px;
+          color: #EC008C; }
+        .nav.tabs.bottom li > a:hover {
+          border-bottom-color: #EC008C; }
+      .nav.tabs.bottom li.active > a {
+        border-bottom-color: #EC008C !important;
+        font-weight: 800; }
+  .nav.sides {
+    font-size: 0; }
+    .nav.sides li {
+      font-size: 0;
+      position: relative;
+      text-align: center;
+      text-align: left; }
+      .nav.sides li + li {
+        margin-top: 15px; }
+      .nav.sides li > a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0 0 0 10px;
+        transition: border-left-color .3s linear;
+        border-right: none;
+        border-left: 2px solid transparent;
+        line-height: 1;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal; }
+        .nav.sides li > a > .number {
+          font-style: normal;
+          font-size: 12px;
+          color: #EC008C; }
+        .nav.sides li > a:hover {
+          border-left-color: #EC008C; }
+      .nav.sides li.active > a {
+        border-left-color: #EC008C !important;
+        font-weight: bold; }
+    .nav.sides.right li {
+      font-size: 0;
+      position: relative;
+      text-align: center;
+      text-align: right; }
+      .nav.sides.right li + li {
+        margin-top: 15px; }
+      .nav.sides.right li > a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0 10px 0 0;
+        transition: border-right-color .3s linear;
+        border-left: none;
+        border-right: 2px solid transparent;
+        line-height: 1;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal; }
+        .nav.sides.right li > a > .number {
+          font-style: normal;
+          font-size: 12px;
+          color: #EC008C; }
+        .nav.sides.right li > a:hover {
+          border-right-color: #EC008C; }
+      .nav.sides.right li.active > a {
+        border-right-color: #EC008C !important;
+        font-weight: bold; }
+    .nav.sides.left li {
+      font-size: 0;
+      position: relative;
+      text-align: center;
+      text-align: left; }
+      .nav.sides.left li + li {
+        margin-top: 15px; }
+      .nav.sides.left li > a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0 0 0 10px;
+        transition: border-left-color .3s linear;
+        border-right: none;
+        border-left: 2px solid transparent;
+        line-height: 1;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal; }
+        .nav.sides.left li > a > .number {
+          font-style: normal;
+          font-size: 12px;
+          color: #EC008C; }
+        .nav.sides.left li > a:hover {
+          border-left-color: #EC008C; }
+      .nav.sides.left li.active > a {
+        border-left-color: #EC008C !important;
+        font-weight: bold; }
 
 /* Variables */
 .vipui .row {

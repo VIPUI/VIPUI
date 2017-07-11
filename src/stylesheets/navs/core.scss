@@ -10,41 +10,30 @@
     /* tab nav */
     &.tabs {
         font-size: 0;
-        li {
-            font-size: 0;
-            display: inline-block;
-            position: relative;
 
-            &+li {
-                margin-left: $navTabMargin;
-            }
+        @include navItem("bottom");
 
-            >a {
-                position: relative;
-                display: inline-block;
-                text-decoration: none;
-                color: $black;
-                font-weight: $navTabFontWeight;
-                font-size: $navTabFontSize;
-                padding: $navTabPadding;
-                border-bottom: 2px solid transparent;
-                transition: border-bottom-color .3s linear;
+        &.top {
+            @include navItem("top");
+        }
 
-                >.number {
-                    font-style: normal;
-                    color: $brandColor;
-                }
+        &.bottom {
+            @include navItem("bottom");
+        }
+    }
 
-                &:hover {
-                    border-bottom-color: $brandColor;
-                }
-            }
+    /* sides nav */
+    &.sides {
+        font-size: 0;
 
-            &.active {
-                >a {
-                    border-bottom-color: $brandColor !important;
-                }
-            }
+        @include navItem("left");
+
+        &.right {
+            @include navItem("right");
+        }
+
+        &.left {
+            @include navItem("left");
         }
     }
 }

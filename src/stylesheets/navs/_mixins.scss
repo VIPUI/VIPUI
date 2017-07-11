@@ -1,0 +1,152 @@
+@mixin fontStyle ($fontColor, $fontSize, $fontWeight) {
+    color: $fontColor;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-style: normal;
+}
+
+@mixin navItem ($borderDirection) {
+    li {
+        font-size: 0;
+        position: relative;
+        text-align: center;
+
+        @if $borderDirection=="top" {
+            display: inline-block;
+            &+li {
+                margin-left: $navItemTabsMargin;
+            }
+        }
+
+        @if $borderDirection=="bottom" {
+            display: inline-block;
+            &+li {
+                margin-left: $navItemTabsMargin;
+            }
+        }
+
+        @if $borderDirection=="left" {
+            text-align: left;
+            &+li {
+                margin-top: $navItemSidesMargin;
+            }
+        }
+
+        @if $borderDirection=="right" {
+            text-align: right;
+            &+li {
+                margin-top: $navItemSidesMargin;
+            }
+        }
+
+        >a {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+
+            @if $borderDirection=="top" {
+                padding: $navItemTabsPadding;
+                transition: border-top-color .3s linear;
+                border-top: $navItemBorderWidth solid transparent;
+                border-bottom: none;
+
+                @include fontStyle($navItemTabsTextColor, $navItemTabsFontSize, $navItemTabsFontWeight);
+            }
+
+            @if $borderDirection=="bottom" {
+                padding: $navItemTabsPadding;
+                transition: border-bottom-color .3s linear;
+                border-top: none;
+                border-bottom: $navItemBorderWidth solid transparent;
+
+                @include fontStyle($navItemTabsTextColor, $navItemTabsFontSize, $navItemTabsFontWeight);
+            }
+
+            @if $borderDirection=="left" {
+                padding: 0 0 0 $navItemSidesPadding;
+                transition: border-left-color .3s linear;
+                border-right: none;
+                border-left: $navItemBorderWidth solid transparent;
+                line-height: 1;
+
+                @include fontStyle($navItemSidesTextColor, $navItemSidesFontSize, $navItemSidesFontWeight);
+            }
+
+            @if $borderDirection=="right" {
+                padding: 0 $navItemSidesPadding 0 0;
+                transition: border-right-color .3s linear;
+                border-left: none;
+                border-right: $navItemBorderWidth solid transparent;
+                line-height: 1;
+
+                @include fontStyle($navItemSidesTextColor, $navItemSidesFontSize, $navItemSidesFontWeight);
+            }
+
+            >.number {
+                font-style: normal;
+
+                @if $borderDirection=="top" {
+                    font-size: $navItemTabsNumberFontSize;
+                    color: $navItemTabsNumberTextColor;
+                }
+
+                @if $borderDirection=="bottom" {
+                    font-size: $navItemTabsNumberFontSize;
+                    color: $navItemTabsNumberTextColor;
+                }
+
+                @if $borderDirection=="left" {
+                    font-size: $navItemSidesNumberFontSize;
+                    color: $navItemSidesNumberTextColor;
+                }
+
+                @if $borderDirection=="right" {
+                    font-size: $navItemSidesNumberFontSize;
+                    color: $navItemSidesNumberTextColor;
+                }
+            }
+
+            &:hover {
+                @if $borderDirection=="top" {
+                    border-top-color: $navItemTabsHoverBorderColor;
+                }
+
+                @if $borderDirection=="bottom" {
+                    border-bottom-color: $navItemTabsHoverBorderColor;
+                }
+
+                @if $borderDirection=="left" {
+                    border-left-color: $navItemSidesHoverBorderColor;
+                }
+
+                @if $borderDirection=="right" {
+                    border-right-color: $navItemSidesHoverBorderColor;
+                }
+            }
+        }
+
+        &.active {
+            >a {
+                @if $borderDirection=="top" {
+                    border-top-color: $navItemTabsHoverBorderColor !important;
+                    font-weight: $navItemTabsActiveFontWeight;
+                }
+
+                @if $borderDirection=="bottom" {
+                    border-bottom-color: $navItemTabsHoverBorderColor !important;
+                    font-weight: $navItemTabsActiveFontWeight;
+                }
+
+                @if $borderDirection=="left" {
+                    border-left-color: $navItemSidesHoverBorderColor !important;
+                    font-weight: $navItemSidesActiveFontWeight;
+                }
+
+                @if $borderDirection=="right" {
+                    border-right-color: $navItemSidesHoverBorderColor !important;
+                    font-weight: $navItemSidesActiveFontWeight;
+                }
+            }
+        }
+    }
+}
