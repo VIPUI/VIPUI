@@ -6,7 +6,6 @@
   .vipui * {
     box-sizing: border-box; }
 
-/* text layout */
 .text-left {
   text-align: left !important; }
 
@@ -19,7 +18,6 @@
 .text-bold {
   font-weight: bold !important; }
 
-/* table layout */
 .table-box {
   display: table !important; }
 
@@ -29,7 +27,6 @@
 .table-cell-box {
   display: table-cell !important; }
 
-/* float layout */
 .float-left {
   float: left !important; }
 
@@ -39,7 +36,6 @@
 .float-none {
   float: none !important; }
 
-/* row margin */
 .row-margin {
   margin: .5em; }
   .row-margin.top {
@@ -47,13 +43,32 @@
   .row-margin.bottom {
     margin: 0 0 .5em; }
 
-/* row padding */
 .row-padding {
   padding: .5em; }
   .row-padding.top {
     padding: .5em 0 0; }
   .row-padding.bottom {
     padding: 0 0 .5em; }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("./iconfont.eot?t=1499849262304");
+  /* IE9*/
+  src: url("./iconfont.eot?t=1499849262304#iefix") format("embedded-opentype"), url("./iconfont.woff?t=1499849262304") format("woff"), url("./iconfont.ttf?t=1499849262304") format("truetype"), url("./iconfont.svg?t=1499849262304#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-right:before {
+  content: "\e681"; }
+
+.icon-wrong:before {
+  content: "\e613"; }
 
 /* Button Mixin */
 .vipui button,
