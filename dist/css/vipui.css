@@ -533,6 +533,39 @@ a.bold {
   .vipui .avatar.floated.left {
     float: left; }
 
+.vipui .radio {
+  margin: 1em; }
+  .vipui .radio input[type="radio"] {
+    position: absolute;
+    opacity: 0; }
+    .vipui .radio input[type="radio"] + .radio-label:before {
+      content: '';
+      background: #fff;
+      border-radius: 100%;
+      border: 1px solid #bfbfbf;
+      display: inline-block;
+      width: 1.4em;
+      height: 1.4em;
+      position: relative;
+      top: -0.2em;
+      margin-right: 1em;
+      vertical-align: top;
+      cursor: pointer;
+      text-align: center;
+      transition: all .1s linear; }
+    .vipui .radio input[type="radio"]:checked + .radio-label:before {
+      background-color: #EC008C;
+      box-shadow: inset 0 0 0 4px #fff; }
+    .vipui .radio input[type="radio"]:focus + .radio-label:before {
+      outline: none;
+      border-color: #EC008C; }
+    .vipui .radio input[type="radio"]:disabled + .radio-label:before {
+      box-shadow: inset 0 0 0 4px #fff;
+      border-color: #bfbfbf;
+      background: #bfbfbf; }
+    .vipui .radio input[type="radio"] + .radio-label:empty:before {
+      margin-right: 0; }
+
 .nav {
   display: block;
   padding: 0;
