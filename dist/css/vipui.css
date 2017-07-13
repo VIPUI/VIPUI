@@ -599,6 +599,60 @@ a.bold {
     .vipui .checkbox input[type="checkbox"] + .checkbox-label:empty:before {
       margin-right: 0; }
 
+.vipui .selectbox {
+  border: 1px solid #bbb;
+  border-radius: .3em;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  background: #f3f3f3;
+  background: #fff -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e5e5e5));
+  background: #fff linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  position: relative;
+  display: block; }
+  .vipui .selectbox select {
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    border-radius: .2em;
+    padding-right: 2em;
+    background: none;
+    border: 1px solid transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin: 0;
+    outline: none;
+    padding: .6em .8em .5em .8em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px; }
+    .vipui .selectbox select option {
+      font-weight: normal; }
+    .vipui .selectbox select:hover {
+      border-color: #888; }
+    .vipui .selectbox select:focus {
+      box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+      box-shadow: 0 0 0 3px -moz-mac-focusring;
+      color: #222;
+      border-color: #aaa;
+      outline: 0; }
+  .vipui .selectbox::after {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #666;
+    margin-top: -3px;
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    z-index: 2;
+    pointer-events: none; }
+
 .nav {
   display: block;
   padding: 0;
