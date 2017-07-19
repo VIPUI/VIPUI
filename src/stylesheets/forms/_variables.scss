@@ -29,3 +29,11 @@ $radioBoxColor: $brandColor;
 // check box
 $checkBoxBackgroundColor: $white;
 $checkBoxColor: $brandColor;
+
+// select box
+$selectBorder: 1px solid #bbb;
+$selectBoxShadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+$selectTextColor: #444;
+$selectHoverBorderColor: #888;
+$selectFocusTextColor: #222;
+$selectFocusBorderColor: #aaa;
