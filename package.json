@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build-ts": "tsc --outDir ./dist/js --module commonjs ./src/scripts/*.ts",
-        "build-css": "node-sass --include-path scss src/stylesheets/vipui.scss  dist/css/vipui.css",
+        "build-css": "node-sass --output-style expanded --include-path scss src/stylesheets/vipui.scss  dist/css/vipui.css",
+        "build-min-css": "node-sass --output-style compressed --include-path scss src/stylesheets/vipui.scss  dist/css/vipui.min.css",
         "watch-css": "nodemon -e scss -x \"npm run build-css\" "
     },
     "repository": {
