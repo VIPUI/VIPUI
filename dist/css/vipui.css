@@ -99,8 +99,8 @@
 
 /* Button Mixin */
 .vipui button,
-.vipui input[type="button"]
-a {
+.vipui input[type="button"],
+.vipui .button {
   display: inline-block;
   zoom: 1;
   white-space: nowrap;
@@ -138,8 +138,8 @@ a {
 }
 
 .vipui button:hover,
-.vipui input[type="button"]
-a:hover {
+.vipui input[type="button"]:hover,
+.vipui .button:hover {
   color: #fff;
   background-color: #4d4d4d;
   border-style: solid;
@@ -148,8 +148,8 @@ a:hover {
 }
 
 .vipui button:active,
-.vipui input[type="button"]
-a:active {
+.vipui input[type="button"]:active,
+.vipui .button:active {
   color: #fff;
   background-color: #1a1a1a;
   border-style: solid;
@@ -158,8 +158,8 @@ a:active {
 }
 
 .vipui button.ghost,
-.vipui input[type="button"]
-a.ghost {
+.vipui input[type="button"].ghost,
+.vipui .button.ghost {
   color: #666;
   background-color: #fff;
   border-style: solid;
@@ -168,22 +168,22 @@ a.ghost {
 }
 
 .vipui button.ghost:hover,
-.vipui input[type="button"]
-a.ghost:hover {
+.vipui input[type="button"].ghost:hover,
+.vipui .button.ghost:hover {
   color: #666;
   background-color: #f2f2f2;
 }
 
 .vipui button.ghost:active,
-.vipui input[type="button"]
-a.ghost:active {
+.vipui input[type="button"].ghost:active,
+.vipui .button.ghost:active {
   color: #666;
   background-color: #ededed;
 }
 
 .vipui button.mini,
-.vipui input[type="button"]
-a.mini {
+.vipui input[type="button"].mini,
+.vipui .button.mini {
   padding: 0.126em 1.5em;
   font-size: 0.8571em;
   font-weight: 100;
@@ -192,8 +192,8 @@ a.mini {
 }
 
 .vipui button.small,
-.vipui input[type="button"]
-a.small {
+.vipui input[type="button"].small,
+.vipui .button.small {
   padding: 0.292em 2em;
   font-size: 0.8571em;
   font-weight: 100;
@@ -202,8 +202,8 @@ a.small {
 }
 
 .vipui button.large,
-.vipui input[type="button"]
-a.large {
+.vipui input[type="button"].large,
+.vipui .button.large {
   padding: 0.6em 2em;
   font-size: 1.0714em;
   font-weight: 100;
@@ -212,8 +212,8 @@ a.large {
 }
 
 .vipui button.huge,
-.vipui input[type="button"]
-a.huge {
+.vipui input[type="button"].huge,
+.vipui .button.huge {
   padding: 0.5em 2em;
   font-size: 1.1429em;
   font-weight: 100;
@@ -222,21 +222,21 @@ a.huge {
 }
 
 .vipui button.block,
-.vipui input[type="button"]
-a.block {
+.vipui input[type="button"].block,
+.vipui .button.block {
   display: block;
   width: 100%;
 }
 
 .vipui button:focus,
-.vipui input[type="button"]
-a:focus {
+.vipui input[type="button"]:focus,
+.vipui .button:focus {
   outline: 0;
 }
 
 .vipui button.brand,
-.vipui input[type="button"]
-a.brand {
+.vipui input[type="button"].brand,
+.vipui .button.brand {
   color: #fff;
   background-color: #EC008C;
   border-style: solid;
@@ -245,8 +245,8 @@ a.brand {
 }
 
 .vipui button.brand:hover,
-.vipui input[type="button"]
-a.brand:hover {
+.vipui input[type="button"].brand:hover,
+.vipui .button.brand:hover {
   color: #fff;
   background-color: #ff20a4;
   border-style: solid;
@@ -255,8 +255,8 @@ a.brand:hover {
 }
 
 .vipui button.brand:active,
-.vipui input[type="button"]
-a.brand:active {
+.vipui input[type="button"].brand:active,
+.vipui .button.brand:active {
   color: #fff;
   background-color: #b9006e;
   border-style: solid;
@@ -265,8 +265,8 @@ a.brand:active {
 }
 
 .vipui button.brand.ghost,
-.vipui input[type="button"]
-a.brand.ghost {
+.vipui input[type="button"].brand.ghost,
+.vipui .button.brand.ghost {
   color: #EC008C;
   background-color: #fff;
   border-style: solid;
@@ -275,8 +275,8 @@ a.brand.ghost {
 }
 
 .vipui button.brand.ghost:hover,
-.vipui input[type="button"]
-a.brand.ghost:hover {
+.vipui input[type="button"].brand.ghost:hover,
+.vipui .button.brand.ghost:hover {
   color: #EC008C;
   background-color: #fff6fb;
   border-style: solid;
@@ -285,8 +285,8 @@ a.brand.ghost:hover {
 }
 
 .vipui button.brand.ghost:active,
-.vipui input[type="button"]
-a.brand.ghost:active {
+.vipui input[type="button"].brand.ghost:active,
+.vipui .button.brand.ghost:active {
   color: #EC008C;
   background-color: #ffecf7;
   border-style: solid;
@@ -295,10 +295,10 @@ a.brand.ghost:active {
 }
 
 .vipui button[disabled], .vipui button.disabled,
-.vipui input[type="button"]
-a[disabled],
-.vipui input[type="button"]
-a.disabled {
+.vipui input[type="button"][disabled],
+.vipui input[type="button"].disabled,
+.vipui .button[disabled],
+.vipui .button.disabled {
   cursor: not-allowed;
   color: #fff;
   background-color: #ccc;
@@ -308,10 +308,10 @@ a.disabled {
 }
 
 .vipui button[disabled]:hover, .vipui button.disabled:hover,
-.vipui input[type="button"]
-a[disabled]:hover,
-.vipui input[type="button"]
-a.disabled:hover {
+.vipui input[type="button"][disabled]:hover,
+.vipui input[type="button"].disabled:hover,
+.vipui .button[disabled]:hover,
+.vipui .button.disabled:hover {
   color: #fff;
   background-color: #ccc;
   border-style: solid;
@@ -320,10 +320,10 @@ a.disabled:hover {
 }
 
 .vipui button[disabled]:active, .vipui button.disabled:active,
-.vipui input[type="button"]
-a[disabled]:active,
-.vipui input[type="button"]
-a.disabled:active {
+.vipui input[type="button"][disabled]:active,
+.vipui input[type="button"].disabled:active,
+.vipui .button[disabled]:active,
+.vipui .button.disabled:active {
   color: #fff;
   background-color: #ccc;
   border-style: solid;
@@ -332,10 +332,10 @@ a.disabled:active {
 }
 
 .vipui button[disabled].ghost, .vipui button.disabled.ghost,
-.vipui input[type="button"]
-a[disabled].ghost,
-.vipui input[type="button"]
-a.disabled.ghost {
+.vipui input[type="button"][disabled].ghost,
+.vipui input[type="button"].disabled.ghost,
+.vipui .button[disabled].ghost,
+.vipui .button.disabled.ghost {
   color: #ccc;
   background-color: #fff;
   border-style: solid;
@@ -344,10 +344,10 @@ a.disabled.ghost {
 }
 
 .vipui button[disabled].ghost:hover, .vipui button.disabled.ghost:hover,
-.vipui input[type="button"]
-a[disabled].ghost:hover,
-.vipui input[type="button"]
-a.disabled.ghost:hover {
+.vipui input[type="button"][disabled].ghost:hover,
+.vipui input[type="button"].disabled.ghost:hover,
+.vipui .button[disabled].ghost:hover,
+.vipui .button.disabled.ghost:hover {
   color: #ccc;
   background-color: #fff;
   border-style: solid;
@@ -356,10 +356,10 @@ a.disabled.ghost:hover {
 }
 
 .vipui button[disabled].ghost:active, .vipui button.disabled.ghost:active,
-.vipui input[type="button"]
-a[disabled].ghost:active,
-.vipui input[type="button"]
-a.disabled.ghost:active {
+.vipui input[type="button"][disabled].ghost:active,
+.vipui input[type="button"].disabled.ghost:active,
+.vipui .button[disabled].ghost:active,
+.vipui .button.disabled.ghost:active {
   color: #ccc;
   background-color: #fff;
   border-style: solid;
@@ -368,8 +368,8 @@ a.disabled.ghost:active {
 }
 
 .vipui button.icon,
-.vipui input[type="button"]
-a.icon {
+.vipui input[type="button"].icon,
+.vipui .button.icon {
   /* basic style */
   color: #666;
   background-color: transparent;
@@ -386,22 +386,22 @@ a.icon {
 }
 
 .vipui button.icon:hover,
-.vipui input[type="button"]
-a.icon:hover {
+.vipui input[type="button"].icon:hover,
+.vipui .button.icon:hover {
   color: gray;
   background-color: transparent;
 }
 
 .vipui button.icon:active,
-.vipui input[type="button"]
-a.icon:active {
+.vipui input[type="button"].icon:active,
+.vipui .button.icon:active {
   color: #4d4d4d;
   background-color: transparent;
 }
 
 .vipui button.icon.brand,
-.vipui input[type="button"]
-a.icon.brand {
+.vipui input[type="button"].icon.brand,
+.vipui .button.icon.brand {
   /* basic style */
   color: #EC008C;
   background-color: transparent;
@@ -418,29 +418,101 @@ a.icon.brand {
 }
 
 .vipui button.icon.brand:hover,
-.vipui input[type="button"]
-a.icon.brand:hover {
+.vipui input[type="button"].icon.brand:hover,
+.vipui .button.icon.brand:hover {
   color: #ff20a4;
   background-color: transparent;
 }
 
 .vipui button.icon.brand:active,
-.vipui input[type="button"]
-a.icon.brand:active {
+.vipui input[type="button"].icon.brand:active,
+.vipui .button.icon.brand:active {
   color: #b9006e;
   background-color: transparent;
 }
 
 .vipui button .icon + span,
-.vipui input[type="button"]
-a .icon + span {
+.vipui input[type="button"] .icon + span,
+.vipui .button .icon + span {
   margin-left: 0.5em;
 }
 
 .vipui button.bold,
-.vipui input[type="button"]
-a.bold {
+.vipui input[type="button"].bold,
+.vipui .button.bold {
   font-weight: bold;
+}
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.pagination li,
+.pagination .page {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.pagination li > a,
+.pagination li > span,
+.pagination .page > a,
+.pagination .page > span {
+  display: inline-block;
+  color: #666;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.pagination li > a,
+.pagination .page > a {
+  text-decoration: none;
+  border: 1px solid #E5E5E5;
+  transition: background-color .3s linear;
+  background-color: #fff;
+}
+
+.pagination li > a:hover,
+.pagination .page > a:hover {
+  background-color: #F5F5F5;
+}
+
+.pagination li > a:active,
+.pagination .page > a:active {
+  background-color: #e8e8e8;
+}
+
+.pagination li.active a,
+.pagination .page.active a {
+  color: #fff;
+  border-color: #fff;
+  background-color: #333;
+}
+
+.pagination li + li a,
+.pagination li + .page a,
+.pagination .page + li a,
+.pagination .page + .page a {
+  margin-left: 3px;
+}
+
+.pagination li.pagination-prev a:before, .pagination li.pagination-next a:before,
+.pagination .page.pagination-prev a:before,
+.pagination .page.pagination-next a:before {
+  display: inline-block;
+  content: " ";
+}
+
+.pagination li.pagination-prev a:after, .pagination li.pagination-next a:after,
+.pagination .page.pagination-prev a:after,
+.pagination .page.pagination-next a:after {
+  display: inline-block;
+  content: " ";
 }
 
 /* Form Mixin */

@@ -2,8 +2,8 @@
 @import "mixins";
 .vipui {
     button,
-    input[type="button"]
-    a {
+    input[type="button"],
+    .button {
         display: inline-block;
         zoom: 1;
         white-space: nowrap;
