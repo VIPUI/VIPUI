@@ -60,18 +60,43 @@
         &.pagination-next {
             a {
                 position: relative;
+                transition: border-color .3s linear;
             }
         }
 
         &.pagination-prev {
             a {
                 @include arrow("left");
+
+                &:hover {
+                    &:after {
+                        border-color: transparent $paginationHoverBackgroundColor transparent transparent;
+                    }
+                }
+
+                &:active {
+                    &:after {
+                        border-color: transparent $paginationActiveBackgroundColor transparent transparent;
+                    }
+                }
             }
         }
 
         &.pagination-next {
             a {
                 @include arrow("right");
+
+                &:hover {
+                    &:after {
+                        border-color: transparent transparent transparent $paginationHoverBackgroundColor;
+                    }
+                }
+
+                &:active {
+                    &:after {
+                        border-color: transparent transparent transparent $paginationActiveBackgroundColor;
+                    }
+                }
             }
         }
     }

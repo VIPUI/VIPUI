@@ -508,6 +508,7 @@
 .pagination .page.pagination-prev a,
 .pagination .page.pagination-next a {
   position: relative;
+  transition: border-color .3s linear;
 }
 
 .pagination li.pagination-prev a:before, .pagination li.pagination-prev a:after,
@@ -536,6 +537,16 @@
   margin-left: 7px;
 }
 
+.pagination li.pagination-prev a:hover:after,
+.pagination .page.pagination-prev a:hover:after {
+  border-color: transparent #F5F5F5 transparent transparent;
+}
+
+.pagination li.pagination-prev a:active:after,
+.pagination .page.pagination-prev a:active:after {
+  border-color: transparent #e8e8e8 transparent transparent;
+}
+
 .pagination li.pagination-next a:before, .pagination li.pagination-next a:after,
 .pagination .page.pagination-next a:before,
 .pagination .page.pagination-next a:after {
@@ -560,6 +571,16 @@
 .pagination .page.pagination-next a:after {
   border-color: transparent transparent transparent #fff;
   margin-left: 9px;
+}
+
+.pagination li.pagination-next a:hover:after,
+.pagination .page.pagination-next a:hover:after {
+  border-color: transparent transparent transparent #F5F5F5;
+}
+
+.pagination li.pagination-next a:active:after,
+.pagination .page.pagination-next a:active:after {
+  border-color: transparent transparent transparent #e8e8e8;
 }
 
 /* Form Mixin */
