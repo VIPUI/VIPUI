@@ -1,0 +1,41 @@
+@mixin arrow ($direction) {
+
+    $margin: ($paginationSize - $paginationArrowSize * 2) / 2;
+
+    &:before,
+    &:after {
+        display: inline-block;
+        content: " ";
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: $paginationArrowSize;
+        position: absolute;
+        top: $margin;
+        left: 0;
+    }
+
+    &:before {
+        @if $direction == "right" {
+            border-color: transparent transparent transparent $paginationArrowColor;
+            margin-left: $margin + $paginationArrowWidth;
+        }
+
+        @if $direction == "left" {
+            border-color: transparent $paginationArrowColor transparent transparent;
+            margin-left: $margin - $paginationArrowWidth - $paginationArrowWidth;
+        }
+    }
+
+    &:after {
+        @if $direction == "right" {
+            border-color: transparent transparent transparent $paginationBackgroundColor;
+            margin-left: $margin;
+        }
+
+        @if $direction == "left" {
+            border-color: transparent $paginationBackgroundColor transparent transparent;
+            margin-left: $margin - $paginationArrowWidth;
+        }
+    }
+}

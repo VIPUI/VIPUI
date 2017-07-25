@@ -2,15 +2,18 @@
 @import "mixins";
 
 .pagination {
+    display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
     font-size: 0;
+    max-height: $paginationSize;
+    overflow: hidden;
 
     li,
     .page {
         display: table-cell;
-        vertical-align: middle;
+        vertical-align: top;
         font-size: $basicFontSize;
 
         >a,
@@ -56,15 +59,19 @@
         &.pagination-prev,
         &.pagination-next {
             a {
-                &:before {
-                    display: inline-block;
-                    content: " ";
-                }
+                position: relative;
+            }
+        }
 
-                &:after {
-                    display: inline-block;
-                    content: " ";
-                }
+        &.pagination-prev {
+            a {
+                @include arrow("left");
+            }
+        }
+
+        &.pagination-next {
+            a {
+                @include arrow("right");
             }
         }
     }
