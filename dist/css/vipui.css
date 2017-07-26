@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+p {
+  line-height: 1.42857;
+}
+
 .text-left {
   text-align: left !important;
 }
