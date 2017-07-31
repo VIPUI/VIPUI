@@ -1,0 +1,98 @@
+@import "variables";
+@import "mixins";
+
+// table layout
+.table,
+table {
+    display: table !important;
+
+    &.full {
+        width: 100%;
+    }
+
+    &.styled {
+
+        .table-cell,
+        th,
+        td {
+            padding: 10px;
+        }
+    }
+
+    &.bordered {
+        border-top: 1px solid lighten($defaultBorderColor, 60%);
+        border-bottom: 1px solid lighten($defaultBorderColor, 60%);
+
+        .table-head,
+        thead {
+
+            &+tr,
+            &+.table-row {
+                border-top: 1px solid lighten($defaultBorderColor, 60%);
+            }
+
+            .table-cell,
+            th,
+            td {
+                border-bottom: 2px solid lighten($defaultBorderColor, 60%);
+            }
+        }
+
+        .table-cell,
+        th,
+        td {
+            border-top: 1px solid lighten($defaultBorderColor, 60%);
+        }
+    }
+
+    &.grid {
+        border: 1px solid lighten($defaultBorderColor, 60%);
+        border-collapse: collapse;
+
+        .table-head,
+        thead {
+
+            &+tr,
+            &+.table-row {
+                border-top: 1px solid lighten($defaultBorderColor, 60%);
+            }
+        }
+
+        .table-cell,
+        th,
+        td {
+            border: 1px solid lighten($defaultBorderColor, 60%);
+        }
+    }
+
+    &.hovered {
+        .table-row,
+        tr {
+            &:hover {
+                background-color: lighten($defaultBorderColor, 70%);
+            }
+        }
+    }
+}
+
+.table-head,
+thead {
+    display: table-header-group !important;
+}
+
+.table-body,
+tbody {
+    display: table-row-group !important;
+}
+
+.table-row,
+tr {
+    display: table-row !important;
+    transition: background-color .3s linear;
+}
+
+.table-cell,
+th,
+td {
+    display: table-cell !important;
+}

@@ -47,6 +47,14 @@ h6 {
   font-size: 1em;
 }
 
+.font-small {
+  font-size: 12px;
+}
+
+.money {
+  font-weight: 700;
+}
+
 .text-left {
   text-align: left !important;
 }
@@ -61,18 +69,6 @@ h6 {
 
 .text-bold {
   font-weight: bold !important;
-}
-
-.table-box {
-  display: table !important;
-}
-
-.table-row-box {
-  display: table-row !important;
-}
-
-.table-cell-box {
-  display: table-cell !important;
 }
 
 .float-left {
@@ -1241,6 +1237,121 @@ h6 {
 .nav.sides.left li.active > a {
   border-left-color: #EC008C !important;
   font-weight: bold;
+}
+
+.table,
+table {
+  display: table !important;
+}
+
+.table.full,
+table.full {
+  width: 100%;
+}
+
+.table.styled .table-cell,
+.table.styled th,
+.table.styled td,
+table.styled .table-cell,
+table.styled th,
+table.styled td {
+  padding: 10px;
+}
+
+.table.bordered,
+table.bordered {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.table.bordered .table-head + tr,
+.table.bordered .table-head + .table-row,
+.table.bordered thead + tr,
+.table.bordered thead + .table-row,
+table.bordered .table-head + tr,
+table.bordered .table-head + .table-row,
+table.bordered thead + tr,
+table.bordered thead + .table-row {
+  border-top: 1px solid #cccccc;
+}
+
+.table.bordered .table-head .table-cell,
+.table.bordered .table-head th,
+.table.bordered .table-head td,
+.table.bordered thead .table-cell,
+.table.bordered thead th,
+.table.bordered thead td,
+table.bordered .table-head .table-cell,
+table.bordered .table-head th,
+table.bordered .table-head td,
+table.bordered thead .table-cell,
+table.bordered thead th,
+table.bordered thead td {
+  border-bottom: 2px solid #cccccc;
+}
+
+.table.bordered .table-cell,
+.table.bordered th,
+.table.bordered td,
+table.bordered .table-cell,
+table.bordered th,
+table.bordered td {
+  border-top: 1px solid #cccccc;
+}
+
+.table.grid,
+table.grid {
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+}
+
+.table.grid .table-head + tr,
+.table.grid .table-head + .table-row,
+.table.grid thead + tr,
+.table.grid thead + .table-row,
+table.grid .table-head + tr,
+table.grid .table-head + .table-row,
+table.grid thead + tr,
+table.grid thead + .table-row {
+  border-top: 1px solid #cccccc;
+}
+
+.table.grid .table-cell,
+.table.grid th,
+.table.grid td,
+table.grid .table-cell,
+table.grid th,
+table.grid td {
+  border: 1px solid #cccccc;
+}
+
+.table.hovered .table-row:hover,
+.table.hovered tr:hover,
+table.hovered .table-row:hover,
+table.hovered tr:hover {
+  background-color: #e6e6e6;
+}
+
+.table-head,
+thead {
+  display: table-header-group !important;
+}
+
+.table-body,
+tbody {
+  display: table-row-group !important;
+}
+
+.table-row,
+tr {
+  display: table-row !important;
+  transition: background-color .3s linear;
+}
+
+.table-cell,
+th,
+td {
+  display: table-cell !important;
 }
 
 /* Variables */
