@@ -4,8 +4,8 @@
     "description": "A small and simple UI library that you can use in every web project.",
     "main": "index.js",
     "scripts": {
+        "start": "webpack --config webpack.config.js --watch",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build-ts": "tsc --outDir ./dist/js --module commonjs ./src/scripts/*.ts",
         "build-css": "node-sass --output-style expanded --include-path scss src/stylesheets/vipui.scss  dist/css/vipui.css",
         "build-min-css": "node-sass --output-style compressed --include-path scss src/stylesheets/vipui.scss  dist/css/vipui.min.css",
         "watch-css": "nodemon -e scss -x \"npm run build-css\" "
@@ -34,6 +34,8 @@
         "font-awesome": "^4.7.0",
         "node-sass": "^4.5.3",
         "nodemon": "^1.11.0",
-        "typescript": "^2.4.1"
+        "ts-loader": "^2.3.2",
+        "typescript": "^2.4.2",
+        "webpack": "^3.4.1"
     }
 }
