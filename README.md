@@ -23,7 +23,7 @@ VIPUI is tested and works in:
 
 * IE 8+
 * Latest Stable: Firefox, Chrome, Safari
-* iOS 7-8
+* iOS 7-11
 * Android 4.x
 
 And maybe it worked in other browsers too. 
