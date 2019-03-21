@@ -37,5 +37,8 @@
         "ts-loader": "^2.3.2",
         "typescript": "^2.4.2",
         "webpack": "^3.4.1"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1"
     }
 }

@@ -848,7 +848,7 @@ h6 {
   position: relative;
   top: -0.2em;
   margin-right: 1em;
-  vertical-align: top;
+  vertical-align: middle;
   cursor: pointer;
   text-align: center;
   transition: all .1s linear;
