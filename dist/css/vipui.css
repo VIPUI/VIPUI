@@ -109,9 +109,9 @@ h6 {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../iconfont.eot?t=1499849262304");
+  src: url("../fonts/iconfont.eot?t=1499849262304");
   /* IE9*/
-  src: url("../iconfont.eot?t=1499849262304#iefix") format("embedded-opentype"), url("../iconfont.woff?t=1499849262304") format("woff"), url("../iconfont.ttf?t=1499849262304") format("truetype"), url("../iconfont.svg?t=1499849262304#iconfont") format("svg");
+  src: url("../fonts/iconfont.eot?t=1499849262304#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff?t=1499849262304") format("woff"), url("../fonts/iconfont.ttf?t=1499849262304") format("truetype"), url("../fonts/iconfont.svg?t=1499849262304#iconfont") format("svg");
   /* iOS 4.1- */
 }
 
