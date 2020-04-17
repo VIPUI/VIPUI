@@ -4,13 +4,19 @@ Get Started
 -----------
 To get started using VIPUI, you just need two part, the CSS part and the JavaScript part.
 
-You can include the VIPUI CSS file in your project :
+You can very easily to install in your project :
+
+```html
+npm i @vipui/vipui
+```
+
+You can also include the VIPUI CSS file in your project :
 
 ```html
 <link rel="stylesheet" href="https://yoursite.com/vipui/dist/css/vipui.css">
 ```
 
-You can include the VIPUI JavaScript file in your project :
+You can also include the VIPUI JavaScript file in your project :
 
 ```html
 <src type="text/javascript" href="https://yoursite.com/vipui/dist/js/vipui.js"></script>
