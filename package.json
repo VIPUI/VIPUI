@@ -1,6 +1,6 @@
 {
     "name": "@vipui/vipui",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A small and simple UI library that you can use in every web project.",
     "main": "index.js",
     "scripts": {
