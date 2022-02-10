@@ -33,7 +33,7 @@
     "homepage": "https://github.com/VIPUI/VIPUI#readme",
     "devDependencies": {
         "font-awesome": "^4.7.0",
-        "node-sass": "^4.13.1",
+        "node-sass": "^7.0.0",
         "nodemon": "^2.0.3",
         "ts-loader": "^7.0.0",
         "typescript": "^3.8.3",
